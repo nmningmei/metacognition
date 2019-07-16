@@ -29,7 +29,7 @@ title_map = {'RandomForestClassifier':'Supplementary Fig','LogisticRegression':'
 model_order = ['LogisticRegression','RandomForestClassifier']
 
 
-big_title = "# [Metacognition Experiments](https://adowaconan.github.io/metacognition/)"
+big_title = "# Metacognition Experiments"
 with open('README.md','w') as f:
     f.write(big_title)
     f.close()
@@ -45,9 +45,9 @@ with open('README.md','a') as f:
 goals = """# Goals:
 * - [x] predict POS/ATT with correct, awareness, and confidence ratings
 * - [X] cross POS-ATT experiment generalization
-* - [ ] cross POS-ATT AUC ANOVA, with between subject factor (Exp) and within subject factor (trial window)
+* - [x] cross POS-ATT AUC ANOVA, with between subject factor (Exp) and within subject factor (trial window)
 * - [x] use features from the previous trials to predict POS/ATT in the next N trials, where 0 < N <= 4
-* - [ ] interpret the results and infer information processing
+* - [x] interpret the results and infer information processing
 """
 with open('README.md','a') as f:
     f.write('\n\n')
@@ -82,7 +82,7 @@ att_ttest = pd.read_csv('../results/ATT_ttest_3_1_features.csv')
 result11="""
 # Result - 1.1 - Exp 1.logistic regression
 ## POS, correct, awareness and confidence as features, decoding scores of logistic regression
-![pos-3-lr](https://github.com/adowaconan/metacognition/blob/master/figures/final_figures/Figure%202.png)
+![pos-3-lr](https://github.com/adowaconan/metacognition/tree/master/figures/final_figures/Figure%202.png)
 Decoding Probability of Success with awareness, correctness, and confidence as features as a function of N-back trials, and factored by the classifiers. 
 The logistic regression decode the POS above chance at the group level (see p values below). Black dotted line is the theoretical chance level, 0.5. 
 Error bars represent bootstrapped 95% confidence intervals\*, resampled from the distribution of decoding scores of individual participants by each classifier with 10000 iterations.
@@ -123,7 +123,7 @@ with open('README.md','a') as f:
 
 features = """
 ### odd ratios estimated by scitkit-learn logistic regression
-![pos-lr-fw](https://github.com/adowaconan/metacognition/blob/master/figures/final_figures/Figure%203.png)
+![pos-lr-fw](https://github.com/adowaconan/metacognition/tree/master/figures/final_figures/Figure%203.png)
 """
 with open('README.md','a') as f:
     f.write('\n\n')
@@ -257,7 +257,7 @@ with open('README.md','a') as f:
 result22="""
 # Result - 1.2 - Exp 1.Random Forest
 ## POS, correct, awareness and confidence as features, decoding scores of random forest
-![pos-3-rf](https://github.com/adowaconan/metacognition/blob/master/figures/final_figures/supplymentary/Supplementary%20Fig%202.png)
+![pos-3-rf](https://github.com/adowaconan/metacognition/tree/master/figures/final_figures/supplymentary/Supplementary%20Fig%202.png)
 Decoding Probability of Success with awareness, correctness, and confidence as features as a function of N-back trials, and factored by the classifiers. 
 The RF decode the POS above chance at the group level (see p values below). Black dotted line is the theoretical chance level, 0.5. 
 Error bars represent bootstrapped 95% confidence intervals, resampled from the distribution of decoding scores of individual participants by each classifier with 10000 iterations.
@@ -274,7 +274,7 @@ with open('README.md','a') as f:
 
 features = """
 ### feature importance estimated by scitkit-learn random forest
-![pos-rf-fw](https://github.com/adowaconan/metacognition/blob/master/figures/final_figures/supplymentary/Supplementary%20Fig%203.png)
+![pos-rf-fw](https://github.com/adowaconan/metacognition/tree/master/figures/final_figures/supplymentary/Supplementary%20Fig%203.png)
 """
 with open('README.md','a') as f:
     f.write('\n\n')
@@ -292,7 +292,7 @@ with open('README.md','a') as f:
 result21="""
 # Result - 2.1 - Exp 2.logistic regression
 ## ATT, correct, awareness and confidence as features, decoding scores of logistic regression
-![att-3-lr](https://github.com/adowaconan/metacognition/blob/master/figures/final_figures/Figure%205.png)
+![att-3-lr](https://github.com/adowaconan/metacognition/tree/master/figures/final_figures/Figure%205.png)
 Decoding decision of engagement with awareness, correctness, and confidence as features as a function of N-back trials, and factored by the classifiers. 
 The logistic regression decode the POS above chance at the group level (see p values below). Black dotted line is the theoretical chance level, 0.5. 
 Error bars represent bootstrapped 95% confidence intervals, resampled from the distribution of decoding scores of individual participants by each classifier with 10000 iterations.
@@ -321,7 +321,7 @@ with open('README.md','a') as f:
 
 features = """
 ### Odd ratio estimated by scitkit-learn logistic regression
-![att-rf-fw](https://github.com/adowaconan/metacognition/blob/master/figures/final_figures/Figure%206.png)
+![att-rf-fw](https://github.com/adowaconan/metacognition/tree/master/figures/final_figures/Figure%206.png)
 """
 with open('README.md','a') as f:
     f.write('\n\n')
@@ -454,7 +454,7 @@ with open('README.md','a') as f:
 result22="""
 # Result - 2.2 - Exp 1.Random Forest
 ## ATT, correct, awareness and confidence as features, decoding scores of random forest
-![att-3-rf](https://github.com/adowaconan/metacognition/blob/master/figures/final_figures/supplymentary/Supplementary%20Fig%205.png)
+![att-3-rf](https://github.com/adowaconan/metacognition/tree/master/figures/final_figures/supplymentary/Supplementary%20Fig%205.png)
 Decoding Decision of Engagement with awareness, correctness, and confidence as features as a function of N-back trials, and factored by the classifiers. 
 The RF decode the POS above chance at the group level (see p values below). Black dotted line is the theoretical chance level, 0.5. 
 Error bars represent bootstrapped 95% confidence intervals, resampled from the distribution of decoding scores of individual participants by each classifier with 10000 iterations.
@@ -471,7 +471,7 @@ with open('README.md','a') as f:
     
 features = """
 ### feature importance estimated by scitkit-learn random forest
-![att-rf-fw](https://github.com/adowaconan/metacognition/blob/master/figures/final_figures/supplymentary/Supplementary%20Fig%203.png)
+![att-rf-fw](https://github.com/adowaconan/metacognition/tree/master/figures/final_figures/supplymentary/Supplementary%20Fig%203.png)
 """
 with open('README.md','a') as f:
     f.write('\n\n')
@@ -553,7 +553,7 @@ for model_name in model_order:
          
 # results 3.1 - Exp.1 <--> Exp.2, logistic regression
 text = """
-![ex12-lr](https://github.com/adowaconan/metacognition/blob/master/figures/final_figures/Figure%208.png)
+![ex12-lr](https://github.com/adowaconan/metacognition/tree/master/figures/final_figures/Figure%208.png)
 """
 with open("README.md",'a') as f:
     f.write('\n\n')
@@ -565,7 +565,7 @@ with open("README.md",'a') as f:
     f.write(text_dict['{}'.format('LogisticRegression')])
 # results 3.2 - Exp.1 <--> Exp.2, Random forest
 text = """
-![ex12-rf](https://github.com/adowaconan/metacognition/blob/master/figures/final_figures/supplymentary/Supplementary%20Fig%208.png)
+![ex12-rf](https://github.com/adowaconan/metacognition/tree/master/figures/final_figures/supplymentary/Supplementary%20Fig%208.png)
 """
 with open("README.md",'a') as f:
     f.write('\n\n')
