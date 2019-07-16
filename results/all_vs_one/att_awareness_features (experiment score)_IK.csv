@@ -1,0 +1,5 @@
+sub,model,score,window,chance,feature
+IK,LogisticRegression,0.5404487179487178,1,False,awareness
+IK,LogisticRegression,0.4781189903846153,2,False,awareness
+IK,LogisticRegression,0.5198111111111111,3,False,awareness
+IK,LogisticRegression,0.5180754098360656,4,False,awareness

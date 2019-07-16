@@ -1,0 +1,18 @@
+
+#!/bin/bash
+
+# This is a script to send correlate predicted awareness with correctness e2 (cpj).py as a batch job.
+# it works on dataset cpj
+
+#$ -cwd
+#$ -o test_run/out_cpj.txt
+#$ -e test_run/err_cpj.txt
+#$ -m be
+#$ -q fsl.q
+#$ -M nmei@bcbl.eu
+#$ -N "e2_cpj"
+#$ -S /bin/bash
+
+module load rocks-python-2.7
+
+python "correlate predicted awareness with correctness e2 (cpj).py"

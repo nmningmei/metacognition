@@ -1,0 +1,4 @@
+                      eta.sq eta.sq.part   eta.sq.gen
+window          6.842151e-30   0.1800750 1.186710e-29
+variable        3.317124e-01   0.6274047 3.652107e-01
+window:variable 9.172301e-02   0.1946194 1.372508e-01

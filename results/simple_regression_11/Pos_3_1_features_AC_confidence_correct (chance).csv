@@ -1,0 +1,6 @@
+sub,model,score,window,feature_name,target_name,chance
+AC,LogisticRegression,0.5272023809523809,0,confidence,correct,True
+AC,LogisticRegression,0.5094595524956972,1,confidence,correct,True
+AC,LogisticRegression,0.5014024390243903,2,confidence,correct,True
+AC,LogisticRegression,0.5249450757575759,3,confidence,correct,True
+AC,LogisticRegression,0.5231643356643356,4,confidence,correct,True

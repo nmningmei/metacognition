@@ -1,0 +1,16 @@
+sub sva,model LogisticRegression    ,window 1,score=0.779
+sub sva,model RandomForestClassifier,window 1,score=0.772
+sub sva,model LogisticRegression    ,window 1,score=0.772
+sub sva,model RandomForestClassifier,window 1,score=0.772
+sub sva,model LogisticRegression    ,window 2,score=0.788
+sub sva,model RandomForestClassifier,window 2,score=0.782
+sub sva,model LogisticRegression    ,window 2,score=0.782
+sub sva,model RandomForestClassifier,window 2,score=0.782
+sub sva,model LogisticRegression    ,window 3,score=0.772
+sub sva,model RandomForestClassifier,window 3,score=0.774
+sub sva,model LogisticRegression    ,window 3,score=0.774
+sub sva,model RandomForestClassifier,window 3,score=0.774
+sub sva,model LogisticRegression    ,window 4,score=0.764
+sub sva,model RandomForestClassifier,window 4,score=0.765
+sub sva,model LogisticRegression    ,window 4,score=0.765
+sub sva,model RandomForestClassifier,window 4,score=0.765

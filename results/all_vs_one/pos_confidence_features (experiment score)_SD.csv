@@ -1,0 +1,5 @@
+sub,model,score,window,chance,feature
+SD,LogisticRegression,0.5778157894736842,1,False,confidence
+SD,LogisticRegression,0.6156465959630516,2,False,confidence
+SD,LogisticRegression,0.6399304029304029,3,False,confidence
+SD,LogisticRegression,0.6052142857142857,4,False,confidence

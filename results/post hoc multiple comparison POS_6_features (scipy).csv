@@ -1,0 +1,163 @@
+df,level1,level2,model,pval,t,p_corrected
+718,1,4,LogisticRegression,0.000134196654726949,3.9924870593348576,0.000805179928361694
+718,1,2,LogisticRegression,0.00017638396642741393,3.915561130248696,0.0010583037985644837
+718,1,3,LogisticRegression,0.00019807457207889263,3.8826455014903054,0.0011884474324733558
+718,2,4,LogisticRegression,0.0011554530224688574,3.358368057940912,0.006932718134813144
+718,3,4,LogisticRegression,0.04921605904011368,1.9939731703812777,0.2952963542406821
+718,2,3,LogisticRegression,0.06466622094165156,1.870747704614084,0.38799732564990935
+718,RT_awareness,confidence,LogisticRegression,2.7925692903392134e-07,-5.797875191162896,4.1888539355088204e-06
+718,RT_correct,confidence,LogisticRegression,3.064282004170206e-07,-5.773394287143907,4.596423006255309e-06
+718,confidence,correct,LogisticRegression,5.343149081519779e-07,5.626289126958535,8.014723622279669e-06
+718,RT_confidence,confidence,LogisticRegression,6.281681170229547e-07,-5.583299549830552,9.422521755344322e-06
+718,RT_awareness,awareness,LogisticRegression,2.9159841046517407e-05,-4.530937188296215,0.00043739761569776107
+718,RT_confidence,awareness,LogisticRegression,4.03345530497803e-05,-4.438063193630416,0.0006050182957467045
+718,RT_correct,awareness,LogisticRegression,4.654826902694901e-05,-4.396786451551819,0.0006982240354042351
+718,awareness,correct,LogisticRegression,8.472024103442788e-05,4.222415724982444,0.0012708036155164183
+718,RT_awareness,correct,LogisticRegression,0.008803437926352438,-2.7096619313467674,0.13205156889528658
+718,RT_correct,correct,LogisticRegression,0.031959590149936115,-2.197009862382356,0.47939385224904174
+718,RT_awareness,RT_confidence,LogisticRegression,0.054260531397173274,-1.9638861430547256,0.8139079709575991
+718,RT_confidence,correct,LogisticRegression,0.1306659770136855,-1.532817192867107,1.0
+718,RT_awareness,RT_correct,LogisticRegression,0.14055005180784383,-1.4938266405855687,1.0
+718,awareness,confidence,LogisticRegression,0.59157893154632,0.5394902052075509,1.0
+718,RT_confidence,RT_correct,LogisticRegression,0.5941597779652782,0.5357289645372181,1.0
+28,window 1_confidence,window 1_correct,LogisticRegression,4.3558363018128136e-05,5.8316606047472765,0.0026135017810876883
+28,window 1_RT_correct,window 1_confidence,LogisticRegression,4.970416228650512e-05,-5.75614765912269,0.0029822497371903072
+28,window 1_RT_awareness,window 1_confidence,LogisticRegression,6.121725770884873e-05,-5.63785623462149,0.003673035462530924
+28,window 1_RT_confidence,window 1_confidence,LogisticRegression,8.854186560512163e-05,-5.430938937930368,0.005312511936307298
+28,window 2_RT_correct,window 2_confidence,LogisticRegression,0.0005527728462417098,-4.446809593456871,0.03316637077450259
+28,window 2_RT_awareness,window 2_confidence,LogisticRegression,0.0005773491567258946,-4.424163462281797,0.03464094940355368
+28,window 2_confidence,window 2_correct,LogisticRegression,0.001917454970510633,3.80873501955218,0.11504729823063799
+28,window 2_RT_confidence,window 2_confidence,LogisticRegression,0.002743166298771437,-3.6277641128085873,0.1645899779262862
+28,window 2_RT_awareness,window 2_RT_confidence,LogisticRegression,0.0035904301025639013,-3.4922009987042166,0.21542580615383408
+28,window 2_RT_awareness,window 2_awareness,LogisticRegression,0.004147289069976437,-3.419684410364142,0.24883734419858622
+28,window 1_RT_awareness,window 1_awareness,LogisticRegression,0.004439943531598421,-3.3854051325861905,0.26639661189590524
+28,window 2_RT_correct,window 2_awareness,LogisticRegression,0.004584657113633842,-3.3692831083088373,0.2750794268180305
+28,window 1_RT_confidence,window 1_awareness,LogisticRegression,0.00501073764008702,-3.3246176610045204,0.3006442584052212
+28,window 1_RT_correct,window 1_awareness,LogisticRegression,0.0052957318254083265,-3.2968157484225795,0.3177439095244996
+28,window 1_awareness,window 1_correct,LogisticRegression,0.005999964501474441,3.2340611842653932,0.35999787008846645
+28,window 4_RT_confidence,window 4_awareness,LogisticRegression,0.006552591171328385,-3.189762996299843,0.3931554702797031
+28,window 2_awareness,window 2_correct,LogisticRegression,0.009044623922332063,3.027501679933627,0.5426774353399237
+28,window 2_RT_confidence,window 2_awareness,LogisticRegression,0.011642378206243132,-2.899985807558223,0.6985426923745879
+28,window 4_RT_awareness,window 4_awareness,LogisticRegression,0.014208353263535423,-2.7989966306735683,0.8525011958121254
+28,window 2_RT_awareness,window 2_correct,LogisticRegression,0.017824221970935757,-2.683467305385899,1.0
+28,window 4_awareness,window 4_correct,LogisticRegression,0.018561707494830004,2.662732278442952,1.0
+28,window 3_RT_confidence,window 3_awareness,LogisticRegression,0.023073763823182786,-2.5509740044764713,1.0
+28,window 3_RT_correct,window 3_awareness,LogisticRegression,0.034886718085810856,-2.3359177502255126,1.0
+28,window 4_RT_correct,window 4_awareness,LogisticRegression,0.04180888774087767,-2.240330223509121,1.0
+28,window 3_RT_awareness,window 3_awareness,LogisticRegression,0.04516852452661769,-2.1991934793596113,1.0
+28,window 2_RT_confidence,window 2_RT_correct,LogisticRegression,0.0565379215622588,2.0784669489411893,1.0
+28,window 1_RT_awareness,window 1_correct,LogisticRegression,0.058627739087004575,-2.058760346838449,1.0
+28,window 4_RT_confidence,window 4_confidence,LogisticRegression,0.06999154559343568,-1.9617223413504346,1.0
+28,window 3_RT_confidence,window 3_confidence,LogisticRegression,0.07470364336018209,-1.9256546135078179,1.0
+28,window 3_RT_correct,window 3_confidence,LogisticRegression,0.07849505474880052,-1.8981009822112231,1.0
+28,window 4_RT_awareness,window 4_confidence,LogisticRegression,0.07957277882868265,-1.890488218070995,1.0
+28,window 1_RT_awareness,window 1_RT_confidence,LogisticRegression,0.07986784575811084,-1.8884201546981505,1.0
+28,window 3_awareness,window 3_correct,LogisticRegression,0.08243805645537863,1.8706914547283828,1.0
+28,window 1_RT_correct,window 1_correct,LogisticRegression,0.08286362142218784,-1.8678041102608343,1.0
+28,window 4_confidence,window 4_correct,LogisticRegression,0.08300841525733978,1.8668247606504358,1.0
+28,window 3_RT_awareness,window 3_confidence,LogisticRegression,0.08596288258165583,-1.8471691079058512,1.0
+28,window 4_RT_correct,window 4_confidence,LogisticRegression,0.0989160318875394,-1.7675453125949667,1.0
+28,window 2_RT_correct,window 2_correct,LogisticRegression,0.10015458571638995,-1.7604258075330825,1.0
+28,window 4_RT_confidence,window 4_RT_correct,LogisticRegression,0.1120993140938044,-1.6954816134540587,1.0
+28,window 3_confidence,window 3_correct,LogisticRegression,0.11898950837888385,1.660730258523916,1.0
+28,window 4_RT_awareness,window 4_RT_correct,LogisticRegression,0.2367702733828723,-1.2360707490645841,1.0
+28,window 1_RT_confidence,window 1_correct,LogisticRegression,0.30718679008116706,-1.0597806127074674,1.0
+28,window 3_RT_correct,window 3_correct,LogisticRegression,0.31597067660063394,-1.0399950263950541,1.0
+28,window 2_RT_awareness,window 2_RT_correct,LogisticRegression,0.31900568629436166,-1.0332520870173578,1.0
+28,window 1_RT_awareness,window 1_RT_correct,LogisticRegression,0.3342237650896649,-1.0001245434599246,1.0
+28,window 3_RT_confidence,window 3_correct,LogisticRegression,0.3822833818421021,-0.9020581729583411,1.0
+28,window 4_RT_confidence,window 4_correct,LogisticRegression,0.38561484634750653,-0.8955840620260201,1.0
+28,window 3_RT_awareness,window 3_correct,LogisticRegression,0.5035701596562274,-0.6865655964496638,1.0
+28,window 3_awareness,window 3_confidence,LogisticRegression,0.5629502570675675,0.5925212115744903,1.0
+28,window 4_RT_correct,window 4_correct,LogisticRegression,0.605704228073628,0.5280940212383982,1.0
+28,window 4_RT_awareness,window 4_correct,LogisticRegression,0.6059025021199764,-0.5278007390083154,1.0
+28,window 1_RT_confidence,window 1_RT_correct,LogisticRegression,0.6949915942033128,0.400279863379297,1.0
+28,window 1_awareness,window 1_confidence,LogisticRegression,0.7172204394726714,0.3695873082999876,1.0
+28,window 3_RT_awareness,window 3_RT_correct,LogisticRegression,0.7389756050071361,0.3399025736136486,1.0
+28,window 3_RT_awareness,window 3_RT_confidence,LogisticRegression,0.772359381280196,0.2949518262050181,1.0
+28,window 2_RT_confidence,window 2_correct,LogisticRegression,0.8492848987634076,0.19358044698686744,1.0
+28,window 4_RT_awareness,window 4_RT_confidence,LogisticRegression,0.9338534644219919,0.08450242161615848,1.0
+28,window 3_RT_confidence,window 3_RT_correct,LogisticRegression,0.9652120512153319,-0.04440075198966506,1.0
+28,window 2_awareness,window 2_confidence,LogisticRegression,0.9777173464896978,-0.028434018751462776,1.0
+28,window 4_awareness,window 4_confidence,LogisticRegression,0.9906901156515708,-0.011878562055160555,1.0
+718,2,3,RandomForestClassifier,0.9999999999999862,-1.721089845027395e-14,1.0
+718,2,4,RandomForestClassifier,0.9999999999999865,-1.6981869798464717e-14,1.0
+718,1,2,RandomForestClassifier,0.9999999999999898,1.2797249552911032e-14,1.0
+718,3,4,RandomForestClassifier,0.9999999999999942,-7.291648688185359e-15,1.0
+718,1,3,RandomForestClassifier,0.9999999999999983,2.0784001565769424e-15,1.0
+718,1,4,RandomForestClassifier,0.9999999999999993,-7.489307344530594e-16,1.0
+718,RT_awareness,correct,RandomForestClassifier,3.5549366865134994e-12,8.704979175805137,5.332405029770249e-11
+718,RT_confidence,correct,RandomForestClassifier,1.4812362358496462e-09,7.154486242068235,2.2218543537744695e-08
+718,RT_correct,correct,RandomForestClassifier,5.2591894996767016e-09,6.829284335073108,7.888784249515052e-08
+718,confidence,correct,RandomForestClassifier,2.469635967789631e-06,5.215911482004024,3.704453951684446e-05
+718,awareness,correct,RandomForestClassifier,7.861683655022484e-06,4.89889309645051,0.00011792525482533726
+718,RT_awareness,awareness,RandomForestClassifier,0.060618066139763185,-1.9129004545226589,0.9092709920964478
+718,RT_awareness,RT_correct,RandomForestClassifier,0.09480481437818239,-1.6978516801882413,1.0
+718,RT_awareness,confidence,RandomForestClassifier,0.13935032532792987,-1.4984413051949432,1.0
+718,RT_confidence,awareness,RandomForestClassifier,0.19712949390460405,-1.3044984683671639,1.0
+718,RT_awareness,RT_confidence,RandomForestClassifier,0.2362879842256185,-1.1964988412803765,1.0
+718,RT_correct,awareness,RandomForestClassifier,0.2704578406054795,-1.1124479595439813,1.0
+718,RT_confidence,confidence,RandomForestClassifier,0.3784333971284415,-0.8874626480072709,1.0
+718,RT_correct,confidence,RandomForestClassifier,0.5072615778592968,-0.6671747742872967,1.0
+718,awareness,confidence,RandomForestClassifier,0.5608055525016207,0.5849593932116569,1.0
+718,RT_confidence,RT_correct,RandomForestClassifier,0.6128226882265233,-0.5087529505363548,1.0
+28,window 4_RT_awareness,window 4_correct,RandomForestClassifier,2.6554495962813394e-06,7.553357588826398,0.00015932697577688036
+28,window 4_RT_correct,window 4_correct,RandomForestClassifier,0.00015555954755745892,5.121018425938624,0.009333572853447535
+28,window 3_RT_confidence,window 3_correct,RandomForestClassifier,0.00023023846793031503,4.909360745716642,0.013814308075818902
+28,window 1_confidence,window 1_correct,RandomForestClassifier,0.00023827676195168962,4.890979886061198,0.014296605717101377
+28,window 3_RT_awareness,window 3_correct,RandomForestClassifier,0.00026074926153734756,4.842813153515662,0.015644955692240854
+28,window 2_RT_confidence,window 2_correct,RandomForestClassifier,0.0004936441638637696,4.5058401972866875,0.029618649831826174
+28,window 2_confidence,window 2_correct,RandomForestClassifier,0.0006915405500198305,4.330502254581096,0.04149243300118983
+28,window 1_RT_correct,window 1_confidence,RandomForestClassifier,0.0014991829717013146,-3.933644143081904,0.08995097830207888
+28,window 1_RT_confidence,window 1_confidence,RandomForestClassifier,0.0015929448154612762,-3.902802298051412,0.09557668892767657
+28,window 1_RT_awareness,window 1_confidence,RandomForestClassifier,0.0016381463112492517,-3.8885878919697667,0.0982887786749551
+28,window 2_RT_awareness,window 2_correct,RandomForestClassifier,0.0021265257082376037,3.756348759251753,0.12759154249425622
+28,window 4_RT_confidence,window 4_correct,RandomForestClassifier,0.0024977483207390024,3.6750487506787586,0.14986489924434016
+28,window 3_RT_correct,window 3_correct,RandomForestClassifier,0.0037841384442888586,3.465766813860051,0.2270483066573315
+28,window 1_awareness,window 1_correct,RandomForestClassifier,0.005610902458668354,3.2677602059418667,0.33665414752010125
+28,window 1_RT_awareness,window 1_correct,RandomForestClassifier,0.006709982651010485,3.177826317882284,0.4025989590606291
+28,window 4_RT_correct,window 4_confidence,RandomForestClassifier,0.008126979608025412,3.0814086446246955,0.48761877648152474
+28,window 2_RT_correct,window 2_correct,RandomForestClassifier,0.008358215394800597,3.0672773682771584,0.5014929236880359
+28,window 1_RT_confidence,window 1_correct,RandomForestClassifier,0.011060796541571473,2.9259066366763893,0.6636477924942884
+28,window 2_awareness,window 2_correct,RandomForestClassifier,0.011311562993384526,2.914569616640245,0.6786937796030715
+28,window 3_RT_confidence,window 3_confidence,RandomForestClassifier,0.013937739296808492,2.808765159534942,0.8362643578085095
+28,window 1_RT_correct,window 1_correct,RandomForestClassifier,0.018643693517475107,2.6604767057251864,1.0
+28,window 4_RT_awareness,window 4_confidence,RandomForestClassifier,0.019881919996695013,2.62753137648627,1.0
+28,window 1_RT_awareness,window 1_awareness,RandomForestClassifier,0.02071263406901368,-2.606523285845649,1.0
+28,window 4_RT_confidence,window 4_confidence,RandomForestClassifier,0.021993699450914454,2.57566948428721,1.0
+28,window 1_RT_confidence,window 1_awareness,RandomForestClassifier,0.025115064967212056,-2.5071940801519146,1.0
+28,window 1_RT_correct,window 1_awareness,RandomForestClassifier,0.02863055751868146,-2.439232430475287,1.0
+28,window 4_RT_awareness,window 4_RT_correct,RandomForestClassifier,0.04853348510033829,-2.1607637023901445,1.0
+28,window 3_RT_awareness,window 3_confidence,RandomForestClassifier,0.07083302306661343,1.9551227966519413,1.0
+28,window 4_awareness,window 4_correct,RandomForestClassifier,0.07338178420901284,1.935559253585482,1.0
+28,window 3_RT_correct,window 3_confidence,RandomForestClassifier,0.08135598382552817,1.8780938373865759,1.0
+28,window 3_awareness,window 3_correct,RandomForestClassifier,0.09498376982221296,1.7906845336461004,1.0
+28,window 3_confidence,window 3_correct,RandomForestClassifier,0.09593785075635897,1.7849932797933867,1.0
+28,window 4_RT_correct,window 4_awareness,RandomForestClassifier,0.10889631929756273,1.7122759733406452,1.0
+28,window 4_RT_confidence,window 4_awareness,RandomForestClassifier,0.21288839092621084,1.3051428324710406,1.0
+28,window 4_confidence,window 4_correct,RandomForestClassifier,0.22405153436243214,1.272130257481054,1.0
+28,window 3_RT_awareness,window 3_RT_confidence,RandomForestClassifier,0.2410775572695779,-1.2242043555026096,1.0
+28,window 2_RT_awareness,window 2_awareness,RandomForestClassifier,0.2660677077580994,-1.1584315747063136,1.0
+28,window 2_RT_confidence,window 2_awareness,RandomForestClassifier,0.2671107102920652,-1.1557916481446178,1.0
+28,window 4_awareness,window 4_confidence,RandomForestClassifier,0.2890038840207865,1.1021017484119862,1.0
+28,window 4_RT_awareness,window 4_RT_confidence,RandomForestClassifier,0.30176020277492344,-1.0722123778683301,1.0
+28,window 3_awareness,window 3_confidence,RandomForestClassifier,0.3258106185571178,1.0183009215951688,1.0
+28,window 3_RT_confidence,window 3_RT_correct,RandomForestClassifier,0.3515820646988317,0.9636299069006306,1.0
+28,window 2_RT_confidence,window 2_confidence,RandomForestClassifier,0.37974540583971894,-0.9070160875305155,1.0
+28,window 2_RT_confidence,window 2_RT_correct,RandomForestClassifier,0.4163734217218188,-0.8375125468566466,1.0
+28,window 4_RT_awareness,window 4_awareness,RandomForestClassifier,0.4353749742000943,0.8030377916559942,1.0
+28,window 2_RT_awareness,window 2_confidence,RandomForestClassifier,0.46082143302439016,-0.7583440380451998,1.0
+28,window 2_RT_correct,window 2_awareness,RandomForestClassifier,0.4767826784988055,-0.7310904968520061,1.0
+28,window 4_RT_confidence,window 4_RT_correct,RandomForestClassifier,0.5002512523838344,-0.692004466110807,1.0
+28,window 2_awareness,window 2_confidence,RandomForestClassifier,0.542871524951636,0.6236721563348414,1.0
+28,window 2_RT_awareness,window 2_RT_correct,RandomForestClassifier,0.5619114882446827,-0.5941178878659036,1.0
+28,window 1_awareness,window 1_confidence,RandomForestClassifier,0.5780877867874432,-0.5694288981449898,1.0
+28,window 3_RT_confidence,window 3_awareness,RandomForestClassifier,0.6798909756280918,0.4213584543685202,1.0
+28,window 1_RT_awareness,window 1_RT_correct,RandomForestClassifier,0.7540656641575121,-0.3194993215157667,1.0
+28,window 1_RT_confidence,window 1_RT_correct,RandomForestClassifier,0.7685255702994249,-0.30008007203572395,1.0
+28,window 2_RT_correct,window 2_confidence,RandomForestClassifier,0.8140623884160715,-0.2396662353901167,1.0
+28,window 2_RT_awareness,window 2_RT_confidence,RandomForestClassifier,0.888064391739348,0.14333996466876603,1.0
+28,window 3_RT_correct,window 3_awareness,RandomForestClassifier,0.9666825856413305,0.04252263194218455,1.0
+28,window 3_RT_awareness,window 3_awareness,RandomForestClassifier,0.9694950661525286,0.038931062278914526,1.0
+28,window 1_RT_awareness,window 1_RT_confidence,RandomForestClassifier,0.9822320751910818,0.02267175870567349,1.0
+28,window 3_RT_awareness,window 3_RT_correct,RandomForestClassifier,0.9868880084932108,-0.016730118137720174,1.0

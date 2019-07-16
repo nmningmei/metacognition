@@ -1,0 +1,100 @@
+/opt/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/weight_boosting.py:29: DeprecationWarning: numpy.core.umath_tests is an internal NumPy module and should not be imported. It will be removed in a future NumPy release.
+  from numpy.core.umath_tests import inner1d
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+[Parallel(n_jobs=4)]: Done 453 out of 453 | elapsed:    1.2s finished
+[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:   24.3s
+[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:  2.0min
+[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:  4.4min
+[Parallel(n_jobs=4)]: Done 453 out of 453 | elapsed:  5.7min finished
+Traceback (most recent call last):
+  File "correlate predicted awareness with correctness e2 (ls).py", line 103, in <module>
+    results['p(correct|unawareness)'].append(p_correct_unaware/p_unaware)
+ZeroDivisionError: float division by zero
+/opt/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/weight_boosting.py:29: DeprecationWarning: numpy.core.umath_tests is an internal NumPy module and should not be imported. It will be removed in a future NumPy release.
+  from numpy.core.umath_tests import inner1d
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+[Parallel(n_jobs=4)]: Done 193 tasks      | elapsed:    1.1s
+[Parallel(n_jobs=4)]: Done 453 out of 453 | elapsed:    1.2s finished
+[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:   29.2s
+[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:  2.6min
+[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:  6.0min
+[Parallel(n_jobs=4)]: Done 453 out of 453 | elapsed:  7.6min finished
+Traceback (most recent call last):
+  File "correlate predicted awareness with correctness e2 (ls).py", line 103, in <module>
+    results['p(correct|unawareness)'].append(p_correct_unaware/p_unaware)
+ZeroDivisionError: float division by zero
+/opt/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/weight_boosting.py:29: DeprecationWarning: numpy.core.umath_tests is an internal NumPy module and should not be imported. It will be removed in a future NumPy release.
+  from numpy.core.umath_tests import inner1d
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+[Parallel(n_jobs=4)]: Done 453 out of 453 | elapsed:    0.9s finished
+[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:   28.2s
+[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:  2.1min
+[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:  4.8min
+[Parallel(n_jobs=4)]: Done 453 out of 453 | elapsed:  6.1min finished
+[Parallel(n_jobs=4)]: Done 443 out of 443 | elapsed:    1.0s finished
+[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:   26.5s
+[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:  2.0min
+[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:  4.7min
+[Parallel(n_jobs=4)]: Done 443 out of 443 | elapsed:  5.9min finished
+[Parallel(n_jobs=4)]: Done 433 out of 433 | elapsed:    1.4s finished
+[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:   27.8s
+[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:  2.0min
+[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:  4.7min
+[Parallel(n_jobs=4)]: Done 433 out of 433 | elapsed:  5.7min finished
+[Parallel(n_jobs=4)]: Done 423 out of 423 | elapsed:    0.9s finished
+[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:   29.7s
+[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:  2.2min
+[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:  4.6min
+[Parallel(n_jobs=4)]: Done 423 out of 423 | elapsed:  5.4min finished
+/opt/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/weight_boosting.py:29: DeprecationWarning: numpy.core.umath_tests is an internal NumPy module and should not be imported. It will be removed in a future NumPy release.
+  from numpy.core.umath_tests import inner1d
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+[Parallel(n_jobs=4)]: Done 453 out of 453 | elapsed:    0.7s finished
+[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:   30.3s
+[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:  2.2min
+[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:  4.9min
+[Parallel(n_jobs=4)]: Done 453 out of 453 | elapsed:  6.3min finished
+[Parallel(n_jobs=4)]: Done 443 out of 443 | elapsed:    1.0s finished
+[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:   29.4s
+[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:  2.2min
+[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:  5.1min
+[Parallel(n_jobs=4)]: Done 443 out of 443 | elapsed:  6.3min finished
+[Parallel(n_jobs=4)]: Done 433 out of 433 | elapsed:    1.0s finished
+[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:   28.4s
+[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:  2.2min
+[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:  5.0min
+[Parallel(n_jobs=4)]: Done 433 out of 433 | elapsed:  6.0min finished
+[Parallel(n_jobs=4)]: Done 423 out of 423 | elapsed:    1.3s finished
+[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:   30.5s
+[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:  2.1min
+[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:  4.6min
+[Parallel(n_jobs=4)]: Done 423 out of 423 | elapsed:  5.3min finished
+/opt/anaconda2/lib/python2.7/site-packages/sklearn/ensemble/weight_boosting.py:29: DeprecationWarning: numpy.core.umath_tests is an internal NumPy module and should not be imported. It will be removed in a future NumPy release.
+  from numpy.core.umath_tests import inner1d
+/opt/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+[Parallel(n_jobs=4)]: Done 453 out of 453 | elapsed:    1.4s finished
+[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:   38.5s
+[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:  2.5min
+[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:  6.2min
+[Parallel(n_jobs=4)]: Done 453 out of 453 | elapsed:  7.6min finished
+[Parallel(n_jobs=4)]: Done 308 tasks      | elapsed:    1.7s
+[Parallel(n_jobs=4)]: Done 443 out of 443 | elapsed:    1.9s finished
+[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:   34.6s
+[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:  2.7min
+[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:  5.8min
+[Parallel(n_jobs=4)]: Done 443 out of 443 | elapsed:  7.3min finished
+[Parallel(n_jobs=4)]: Done 433 out of 433 | elapsed:    1.8s finished
+[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:   30.0s
+[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:  2.4min
+[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:  5.7min
+[Parallel(n_jobs=4)]: Done 433 out of 433 | elapsed:  6.9min finished
+[Parallel(n_jobs=4)]: Done 423 out of 423 | elapsed:    1.3s finished
+[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:   31.0s
+[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:  2.5min
+[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:  5.0min
+[Parallel(n_jobs=4)]: Done 423 out of 423 | elapsed:  5.8min finished

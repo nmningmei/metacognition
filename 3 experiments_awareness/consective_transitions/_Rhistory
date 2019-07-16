@@ -1,0 +1,68 @@
+setwd('/bcbl/home/home_n-z/nmei/3 experiments_awarenessconsective_transitions')
+setwd('/bcbl/home/home_n-z/nmei/3 experiments_awareness/consective_transitions')
+df = read.csv('for_anovaRM.csv')
+df
+setwd('/bcbl/home/home_n-z/nmei/3 experiments_awareness/consective_transitions')
+df = read.csv('for_anovaRM.csv')
+df$experiment = factor(df$experiment)
+df$sub = factor(df$sub)
+df$Transitions = factor(df$Transitions)
+aov = with(data=df,aov(Transition.Probability~experiment*Transitions +
+Error(sub/(experiment*Transitions)),
+contrasts = contr.sum))
+aov = with(data=df,aov(Transition.Probability~experiment*Transitions +
+Error(sub/(experiment*Transitions)),
+))
+df$experiment
+df$sub
+df$Transitions
+df$prob = df$Transition.Probability
+setwd('/bcbl/home/home_n-z/nmei/3 experiments_awareness/consective_transitions')
+df = read.csv('for_anovaRM.csv')
+df$experiment = factor(df$experiment)
+df$sub = factor(df$sub)
+df$Transitions = factor(df$Transitions)
+df$prob = df$Transition.Probability
+aov = with(data=df,aov(prob~experiment*Transitions +
+Error(sub/(experiment*Transitions)),
+))
+setwd('/bcbl/home/home_n-z/nmei/3 experiments_awareness/consective_transitions')
+df = read.csv('for_anovaRM.csv')
+df$experiment = factor(df$experiment)
+df$sub = factor(df$sub)
+df$Transitions = factor(df$Transitions)
+df$prob = df$Transition.Probability
+options(contrasts = c("contr.sum","contr.poly"))
+aov = with(data=df,aov(prob~experiment*Transitions +
+Error(sub/(experiment*Transitions)),
+contrasts = contr.sum))
+aov(prob~experiment*Transitions +
+Error(sub/(experiment*Transitions))
+)
+setwd('/bcbl/home/home_n-z/nmei/3 experiments_awareness/consective_transitions')
+df = read.csv('for_anovaRM.csv')
+df$experiment = factor(df$experiment)
+df$sub = factor(df$sub)
+df$Transitions = factor(df$Transitions)
+df$prob = df$Transition.Probability
+options(contrasts = c("contr.sum","contr.poly"))
+a <- aggregate(prob~experiment+Transitions+sub, df, mean)
+aov = with(data=a,aov(prob~experiment*Transitions +
+Error(sub/(experiment*Transitions)),
+contrasts = contr.sum))
+View(a)
+View(df)
+setwd('/bcbl/home/home_n-z/nmei/3 experiments_awareness/consective_transitions')
+df = read.csv('for_anovaRM.csv')
+df$experiment = factor(df$experiment)
+df$sub = factor(df$sub)
+df$Transitions = factor(df$Transitions)
+df$prob = df$Transition.Probability
+options(contrasts = c("contr.sum","contr.poly"))
+a <- aggregate(prob~experiment+Transitions+sub, df, mean)
+aov = with(data=a,aov(prob~experiment +
+Error(sub/(experiment)),
+contrasts = contr.sum))
+aov = with(data=df,aov(prob~experiment*Transition))
+aov = with(data=df,aov(prob~experiment*Transitions))
+summary(aov)

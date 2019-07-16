@@ -1,0 +1,18 @@
+
+#!/bin/bash
+
+# This is a script to send e2 (experiment and chance scores) (lidia).py as a batch job.
+# it works on dataset lidia
+
+#$ -cwd
+#$ -o test_run/out_lidia.txt
+#$ -e test_run/err_lidia.txt
+#$ -m be
+#$ -q fsl.q
+#$ -M nmei@bcbl.eu
+#$ -N "e2_lidia"
+#$ -S /bin/bash
+
+module load rocks-python-2.7
+
+python "e2 (experiment and chance scores) (lidia).py"

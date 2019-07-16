@@ -1,0 +1,23 @@
+
+Error: sub
+          Df    Sum Sq   Mean Sq F value Pr(>F)
+Residuals 15 3.953e-31 2.636e-32               
+
+Error: sub:window
+          Df    Sum Sq   Mean Sq F value Pr(>F)
+window     3 1.170e-32 3.910e-33   0.165  0.919
+Residuals 45 1.065e-30 2.366e-32               
+
+Error: sub:variable
+          Df    Sum Sq   Mean Sq F value Pr(>F)  
+variable   2 0.0007442 0.0003721   5.378 0.0101 *
+Residuals 30 0.0020759 0.0000692                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Error: sub:window:variable
+                Df   Sum Sq   Mean Sq F value  Pr(>F)   
+window:variable  6 0.000861 1.434e-04   3.667 0.00265 **
+Residuals       90 0.003520 3.911e-05                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

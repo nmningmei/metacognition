@@ -1,0 +1,18 @@
+
+#!/bin/bash
+
+# This is a script to send e3 (experiment and chance scores) (kj).py as a batch job.
+# it works on dataset kj
+
+#$ -cwd
+#$ -o test_run/out_kj.txt
+#$ -e test_run/err_kj.txt
+#$ -m be
+#$ -q fsl.q
+#$ -M nmei@bcbl.eu
+#$ -N "e3_kj"
+#$ -S /bin/bash
+
+module load rocks-python-2.7
+
+python "e3 (experiment and chance scores) (kj).py"

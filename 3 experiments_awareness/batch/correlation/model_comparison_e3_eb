@@ -1,0 +1,18 @@
+
+#!/bin/bash
+
+# This is a script to send correlate predicted awareness with correctness e3 (eb).py as a batch job.
+# it works on dataset eb
+
+#$ -cwd
+#$ -o test_run/out_eb.txt
+#$ -e test_run/err_eb.txt
+#$ -m be
+#$ -q fsl.q
+#$ -M nmei@bcbl.eu
+#$ -N "e3_eb"
+#$ -S /bin/bash
+
+module load rocks-python-2.7
+
+python "correlate predicted awareness with correctness e3 (eb).py"

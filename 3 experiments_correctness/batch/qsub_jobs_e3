@@ -1,0 +1,25 @@
+
+#!/bin/bash
+
+# This is a script to qsub jobs
+
+#$ -cwd
+#$ -o test_run/out_q.txt
+#$ -e test_run/err_q.txt
+#$ -m be
+#$ -q fsl.q
+#$ -M nmei@bcbl.eu
+#$ -N "qjobE3"
+#$ -S /bin/bash
+
+
+qsub model_comparison_e3_ab
+qsub model_comparison_e3_eb
+qsub model_comparison_e3_er
+qsub model_comparison_e3_hgh
+qsub model_comparison_e3_kb
+qsub model_comparison_e3_kj
+qsub model_comparison_e3_mp
+qsub model_comparison_e3_rb
+qsub model_comparison_e3_vs
+qsub model_comparison_e3_wp

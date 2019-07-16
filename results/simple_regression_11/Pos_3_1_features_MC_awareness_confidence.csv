@@ -1,0 +1,6 @@
+sub,model,score,window,feature_name,target_name,chance
+MC,LogisticRegression,0.6455902777777779,0,awareness,confidence,False
+MC,LogisticRegression,0.5685540905004496,1,awareness,confidence,False
+MC,LogisticRegression,0.5653074534161491,2,awareness,confidence,False
+MC,LogisticRegression,0.5613153594771242,3,awareness,confidence,False
+MC,LogisticRegression,0.5528137720488467,4,awareness,confidence,False

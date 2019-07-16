@@ -1,0 +1,6 @@
+sub,model,score,window,feature_name,target_name,chance
+PC,LogisticRegression,0.48070924261874204,0,awareness,correct,True
+PC,LogisticRegression,0.5322171052631579,1,awareness,correct,True
+PC,LogisticRegression,0.5113291139240507,2,awareness,correct,True
+PC,LogisticRegression,0.47062590187590186,3,awareness,correct,True
+PC,LogisticRegression,0.5294722222222223,4,awareness,correct,True

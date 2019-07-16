@@ -1,0 +1,16 @@
+sub lidia,model LogisticRegression    ,window 1,score=0.474
+sub lidia,model RandomForestClassifier,window 1,score=0.495
+sub lidia,model LogisticRegression    ,window 1,score=0.480
+sub lidia,model RandomForestClassifier,window 1,score=0.500
+sub lidia,model LogisticRegression    ,window 2,score=0.483
+sub lidia,model RandomForestClassifier,window 2,score=0.500
+sub lidia,model LogisticRegression    ,window 2,score=0.467
+sub lidia,model RandomForestClassifier,window 2,score=0.499
+sub lidia,model LogisticRegression    ,window 3,score=0.479
+sub lidia,model RandomForestClassifier,window 3,score=0.500
+sub lidia,model LogisticRegression    ,window 3,score=0.480
+sub lidia,model RandomForestClassifier,window 3,score=0.495
+sub lidia,model LogisticRegression    ,window 4,score=0.479
+sub lidia,model RandomForestClassifier,window 4,score=0.482
+sub lidia,model LogisticRegression    ,window 4,score=0.522
+sub lidia,model RandomForestClassifier,window 4,score=0.495

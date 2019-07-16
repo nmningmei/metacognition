@@ -1,0 +1,16 @@
+sub jmac,model LogisticRegression    ,window 1,score=0.529
+sub jmac,model RandomForestClassifier,window 1,score=0.535
+sub jmac,model LogisticRegression    ,window 1,score=0.569
+sub jmac,model RandomForestClassifier,window 1,score=0.571
+sub jmac,model LogisticRegression    ,window 2,score=0.522
+sub jmac,model RandomForestClassifier,window 2,score=0.527
+sub jmac,model LogisticRegression    ,window 2,score=0.484
+sub jmac,model RandomForestClassifier,window 2,score=0.492
+sub jmac,model LogisticRegression    ,window 3,score=0.560
+sub jmac,model RandomForestClassifier,window 3,score=0.575
+sub jmac,model LogisticRegression    ,window 3,score=0.499
+sub jmac,model RandomForestClassifier,window 3,score=0.500
+sub jmac,model LogisticRegression    ,window 4,score=0.561
+sub jmac,model RandomForestClassifier,window 4,score=0.580
+sub jmac,model LogisticRegression    ,window 4,score=0.501
+sub jmac,model RandomForestClassifier,window 4,score=0.507

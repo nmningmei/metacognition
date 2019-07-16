@@ -1,0 +1,43 @@
+df,level1,level2,model,pval,t,p_corrected
+358,1,2,LogisticRegression,0.0005942160529263171,-3.7011246329172107,0.0035652963175579026
+358,1,3,LogisticRegression,0.0006729761425748156,-3.6595297167382013,0.004037856855448893
+358,1,4,LogisticRegression,0.0010401279457069085,-3.512395848082755,0.00624076767424145
+358,2,3,LogisticRegression,0.053492980676865906,-1.9841972809690678,0.3209578840611954
+358,2,4,LogisticRegression,0.1131894491738773,-1.6162467001598781,0.6791366950432638
+358,3,4,LogisticRegression,0.9606960046611831,0.04956165640852167,1.0
+358,RT_confidence,RT_correct,LogisticRegression,0.004705259322207138,2.93812428058262,0.014115777966621414
+358,RT_awareness,RT_confidence,LogisticRegression,0.020662908074121186,-2.3780406172548374,0.06198872422236355
+358,RT_awareness,RT_correct,LogisticRegression,0.9074973402570436,0.11669593107087314,1.0
+28,window 2_RT_awareness,window 2_RT_confidence,LogisticRegression,0.0023651661337883104,-3.7025890105594144,0.028381993605459725
+28,window 1_RT_confidence,window 1_RT_correct,LogisticRegression,0.0030723491668810366,3.570648004659219,0.03686819000257244
+28,window 2_RT_confidence,window 2_RT_correct,LogisticRegression,0.006327143137049035,3.2073679282931296,0.07592571764458841
+28,window 1_RT_awareness,window 1_RT_confidence,LogisticRegression,0.018378202838077343,-2.667815994693302,0.22053843405692813
+28,window 4_RT_confidence,window 4_RT_correct,LogisticRegression,0.1779314430434442,-1.418463898299291,1.0
+28,window 4_RT_awareness,window 4_RT_correct,LogisticRegression,0.34589457162959736,-0.9754439613101401,1.0
+28,window 3_RT_awareness,window 3_RT_correct,LogisticRegression,0.439739947173563,0.7952559078236061,1.0
+28,window 3_RT_confidence,window 3_RT_correct,LogisticRegression,0.4690899866534036,0.7441545018323971,1.0
+28,window 1_RT_awareness,window 1_RT_correct,LogisticRegression,0.5227459178128517,0.6555422311791076,1.0
+28,window 3_RT_awareness,window 3_RT_confidence,LogisticRegression,0.8732047338037935,0.1625382214142868,1.0
+28,window 2_RT_awareness,window 2_RT_correct,LogisticRegression,0.8802249518381456,-0.15346077594287647,1.0
+28,window 4_RT_awareness,window 4_RT_confidence,LogisticRegression,0.8934975303006161,0.13633498809566055,1.0
+358,2,3,RandomForestClassifier,0.999999999999976,3.016515664019596e-14,1.0
+358,1,3,RandomForestClassifier,0.999999999999982,2.27027099624297e-14,1.0
+358,2,4,RandomForestClassifier,0.9999999999999831,2.1363788001415e-14,1.0
+358,1,4,RandomForestClassifier,0.999999999999984,2.0122536943243772e-14,1.0
+358,3,4,RandomForestClassifier,0.9999999999999987,1.6321769183179606e-15,1.0
+358,1,2,RandomForestClassifier,0.9999999999999989,-1.3893190873550733e-15,1.0
+358,RT_confidence,RT_correct,RandomForestClassifier,0.05895687172482271,-1.9257657668041128,0.17687061517446812
+358,RT_awareness,RT_confidence,RandomForestClassifier,0.26879423556481097,1.1163595085388416,0.8063827066944329
+358,RT_awareness,RT_correct,RandomForestClassifier,0.3899349443866307,-0.8661162309829004,1.0
+28,window 1_RT_confidence,window 1_RT_correct,RandomForestClassifier,0.058905323310965624,-2.056191631884975,0.7068638797315875
+28,window 1_RT_awareness,window 1_RT_confidence,RandomForestClassifier,0.06757716041433585,1.9810670021838501,0.8109259249720302
+28,window 4_RT_awareness,window 4_RT_correct,RandomForestClassifier,0.27767460475332895,-1.1294859648427404,1.0
+28,window 2_RT_confidence,window 2_RT_correct,RandomForestClassifier,0.30421522336618967,-1.0665679384505147,1.0
+28,window 2_RT_awareness,window 2_RT_confidence,RandomForestClassifier,0.3527033221644369,0.9613167401398504,1.0
+28,window 1_RT_awareness,window 1_RT_correct,RandomForestClassifier,0.41919437477548094,-0.8323307497577068,1.0
+28,window 4_RT_confidence,window 4_RT_correct,RandomForestClassifier,0.5052781243345073,-0.6837748565890112,1.0
+28,window 3_RT_awareness,window 3_RT_correct,RandomForestClassifier,0.515407978870088,0.6673349499860853,1.0
+28,window 4_RT_awareness,window 4_RT_confidence,RandomForestClassifier,0.6481781806178173,-0.46629322061847145,1.0
+28,window 3_RT_confidence,window 3_RT_correct,RandomForestClassifier,0.6842031714174528,0.4153193558585498,1.0
+28,window 3_RT_awareness,window 3_RT_confidence,RandomForestClassifier,0.7165854655482853,0.37045880270566545,1.0
+28,window 2_RT_awareness,window 2_RT_correct,RandomForestClassifier,0.9443428443170712,-0.07107571605483229,1.0

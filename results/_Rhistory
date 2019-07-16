@@ -1,0 +1,512 @@
+random = ~ 1|subs,
+data = data,
+method = "REML")
+print(model_name)
+print(Anova(model))
+# test the random effects in the model
+# random effects in the model can be tested by comparing the model to a model
+# fitted with just the fixed effects and excluding the random effects
+model.fixed = gls(measures ~ window + attrits + window*attrits,
+data = data,
+method = "REML")
+print(anova(model,
+model.fixed))
+# p-value and pseduo r-squared for model
+model.null = lme(measures ~ 1,
+random =  ~ 1|subs,
+data = data)
+print(nagelkerke(model,model.null))
+# post-hoc analysis
+marginal = emmeans::lsmeans(model,
+~attrits:window)
+print(cld(marginal,
+alpha = 0.05,
+Letters = letters,
+adjust = "tukey"))
+}
+df = read.csv('C:/Users/ning/OneDrive/python works/metacognition/ATT.csv')
+for (model_name in levels(df$model)){
+df_sub = df[df$model == model_name,]
+df_sub = df_sub[df_sub$window < 4 & df_sub$window > 0,]
+n = nrow(df_sub)
+measures = unlist(list(df_sub$awareness,df_sub$confidence,df_sub$correct))
+attrits = unlist(list(rep('awareness',n),rep('confidence',n),rep('correct',n)))
+attrits = factor(attrits)
+window = unlist(list(df_sub$window,df_sub$window,df_sub$window))
+window = factor(window)
+subs = unlist(list(df_sub$sub,df_sub$sub,df_sub$sub))
+data = data.frame(atrrits = attrits,
+measures = measures,
+window = window,
+subs = subs)
+# repeated measure anova model
+model = lme(measures ~ window + attrits + window*attrits,
+random = ~ 1|subs,
+data = data,
+method = "REML")
+print(model_name)
+print(Anova(model))
+# test the random effects in the model
+# random effects in the model can be tested by comparing the model to a model
+# fitted with just the fixed effects and excluding the random effects
+model.fixed = gls(measures ~ window + attrits + window*attrits,
+data = data,
+method = "REML")
+print(anova(model,
+model.fixed))
+# p-value and pseduo r-squared for model
+model.null = lme(measures ~ 1,
+random =  ~ 1|subs,
+data = data)
+print(nagelkerke(model,model.null))
+# post-hoc analysis
+marginal = emmeans::lsmeans(model,
+~attrits:window)
+print(cld(marginal,
+alpha = 0.05,
+Letters = letters,
+adjust = "tukey"))
+}
+setwd("C:\\Users\\ning\\OneDrive\\python works\\metacognition\\results")
+library('reshape2') # need for manipulate the data frame to the format that R could work
+library('DescTools')
+df = read.csv('for_spss/auc as by window and model.csv')
+setwd("C:\\Users\\ning\\OneDrive\\python works\\metacognition\\results")
+library('reshape2') # need for manipulate the data frame to the format that R could work
+library('DescTools')
+df = read.csv('for_spss/auc as by window and model.csv')
+head(df)
+setwd("C:\\Users\\ning\\OneDrive\\python works\\metacognition\\results")
+library('reshape2') # need for manipulate the data frame to the format that R could work
+library('DescTools')
+df = read.csv('for_spss/auc as by window and model.csv')
+# say these variables are discrete
+df$sub = factor(df$sub)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+setwd("C:\\Users\\ning\\OneDrive\\python works\\metacognition\\results")
+library('reshape2') # need for manipulate the data frame to the format that R could work
+library('DescTools')
+df = read.csv('for_spss/auc as by window and model.csv')
+# say these variables are discrete
+df$sub = factor(df$participant)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+head(df)
+setwd("C:\\Users\\ning\\OneDrive\\python works\\metacognition\\results")
+library('reshape2') # need for manipulate the data frame to the format that R could work
+library('DescTools')
+df = read.csv('for_spss/auc as by window and model.csv')
+# say these variables are discrete
+df$sub = factor(df$participant)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+#
+for (model in levels(df$model)){
+# select the data frame
+df_sub = df[df$model == model,]
+# anova
+result.aov = with(df_sub,
+aov(score~window+Error(sub/(experiment_train))))
+print(model)
+print(summary(result.aov))
+for (model in levels(df$model)){
+# select the data frame
+df_sub = df[df$model == model,]
+# anova
+result.aov = with(df_sub,
+aov(score~window+Error(sub/(experiment_train))))
+print(model)
+print(summary(result.aov))
+}
+qq
+q
+q
+setwd("C:\\Users\\ning\\OneDrive\\python works\\metacognition\\results")
+library('reshape2') # need for manipulate the data frame to the format that R could work
+library('DescTools')
+df = read.csv('for_spss/auc as by window and model.csv')
+# say these variables are discrete
+df$sub = factor(df$participant)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+#
+for (model in levels(df$model)){
+# select the data frame
+df_sub = df[df$model == model,]
+# anova
+result.aov = with(df_sub,
+aov(score~window+Error(sub/(experiment_train))))
+print(model)
+print(summary(result.aov))
+}
+setwd("C:\\Users\\ning\\OneDrive\\python works\\metacognition\\results")
+library('reshape2') # need for manipulate the data frame to the format that R could work
+library('DescTools')
+df = read.csv('for_spss/auc as by window and model.csv')
+# say these variables are discrete
+df$sub = factor(df$participant)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+#
+for (model in levels(df$model)){
+# select the data frame
+df_sub = df[df$model == model,]
+# anova
+result.aov = with(df_sub,
+aov(score~window+Error(sub/experiment_train)))
+print(model)
+print(summary(result.aov))
+}
+setwd("C:\\Users\\ning\\OneDrive\\python works\\metacognition\\results")
+library('reshape2') # need for manipulate the data frame to the format that R could work
+library('DescTools')
+df = read.csv('for_spss/auc as by window and model.csv')
+# say these variables are discrete
+df$sub = factor(df$participant)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+#
+for (model in levels(df$model)){
+# select the data frame
+df_sub = df[df$model == model,]
+# anova
+result.aov = with(df_sub,
+aov(score~window*experiment_train+Error(sub/experiment_train)))
+print(model)
+print(summary(result.aov))
+}
+setwd("C:\\Users\\ning\\OneDrive\\python works\\metacognition\\results")
+library('reshape2') # need for manipulate the data frame to the format that R could work
+library('DescTools')
+df = read.csv('for_spss/auc as by window and model.csv')
+# say these variables are discrete
+df$sub = factor(df$participant)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+#
+for (model in levels(df$model)){
+# select the data frame
+df_sub = df[df$model == model,]
+# anova
+# N-back as within-subject variable
+# experiment as between-subject variable
+result.aov = with(df_sub,
+aov(score~window*experiment_train+Error(sub/experiment_train)))
+print(model)
+print(summary(result.aov))
+capture.cross = summary(result.aov)
+capture.output(capture.capture.cross,
+file = sprintf("anova results/%s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+eta = EtaSq(result.aov,type = 1)
+capture.output(eta,
+file=sprintf("anova results/Eta sq %s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+}
+eta
+EtaSq(result.aov,type = 1)
+capture.cross = summary(result.aov)
+print(summary(result.aov))
+View(df_sub)
+View(df_sub)
+capture.cross = summary(result.aov)
+setwd("C:\\Users\\ning\\OneDrive\\python works\\metacognition\\results")
+library('reshape2') # need for manipulate the data frame to the format that R could work
+library('DescTools')
+df = read.csv('for_spss/auc as by window and model.csv')
+# say these variables are discrete
+df$sub = factor(df$participant)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+#
+for (model in levels(df$model)){
+# select the data frame
+df_sub = df[df$model == model,]
+# anova
+# N-back as within-subject variable
+# experiment as between-subject variable
+result.aov = with(df_sub,
+aov(score~window*experiment_train+Error(sub/experiment_train)))
+print(model)
+print(summary(result.aov))
+capture.cross = summary(result.aov)
+capture.output(capture.capture.cross,
+file = sprintf("anova results/%s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+eta = EtaSq(result.aov,type = 1)
+capture.output(eta,
+file=sprintf("anova results/Eta sq %s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+}
+setwd("C:\\Users\\ning\\OneDrive\\python works\\metacognition\\results")
+library('reshape2') # need for manipulate the data frame to the format that R could work
+library('DescTools')
+df = read.csv('for_spss/auc as by window and model.csv')
+# say these variables are discrete
+df$sub = factor(df$participant)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+#
+for (model in levels(df$model)){
+# select the data frame
+df_sub = df[df$model == model,]
+# anova
+# N-back as within-subject variable
+# experiment as between-subject variable
+result.aov = with(df_sub,
+aov(score~window*experiment_train+Error(sub/experiment_train)))
+print(model)
+print(summary(result.aov))
+capture.cross = summary(result.aov)
+capture.output(capture.cross,
+file = sprintf("anova results/%s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+eta = EtaSq(result.aov,type = 1)
+capture.output(eta,
+file=sprintf("anova results/Eta sq %s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+}
+setwd("C:\\Users\\ning\\OneDrive\\python works\\metacognition\\results")
+library('reshape2') # need for manipulate the data frame to the format that R could work
+library('DescTools')
+df = read.csv('for_spss/auc as by window and model.csv')
+# say these variables are discrete
+df$sub = factor(df$participant)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+#
+for (model in levels(df$model)){
+# select the data frame
+df_sub = df[df$model == model,]
+# anova
+# N-back as within-subject variable
+# experiment as between-subject variable
+result.aov = with(df_sub,
+aov(score~window+Error(sub/experiment_train)))
+print(model)
+print(summary(result.aov))
+capture.cross = summary(result.aov)
+capture.output(capture.cross,
+file = sprintf("anova results/%s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+eta = EtaSq(result.aov,type = 1)
+capture.output(eta,
+file=sprintf("anova results/Eta sq %s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+}
+setwd("C:\\Users\\ning\\OneDrive\\python works\\metacognition\\results")
+library('reshape2') # need for manipulate the data frame to the format that R could work
+library('DescTools')
+df = read.csv('for_spss/auc as by window and model.csv')
+# say these variables are discrete
+df$sub = factor(df$participant)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+#
+for (model in levels(df$model)){
+# select the data frame
+df_sub = df[df$model == model,]
+# anova
+# N-back as within-subject variable
+# experiment as between-subject variable
+result.aov = with(df_sub,
+aov(score~window*experiment_train+Error(sub/experiment_train)))
+print(model)
+print(summary(result.aov))
+capture.cross = summary(result.aov)
+capture.output(capture.cross,
+file = sprintf("anova results/%s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+eta = EtaSq(result.aov,type = 1)
+capture.output(eta,
+file=sprintf("anova results/Eta sq %s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+}
+aov.car
+ez.glm
+require(car)
+ez.glm
+library('afex')
+install.packages("afex")
+ez.glm("sub","score",df_sub,within="experiment_train",
+between="window",)
+library('afex')
+ez.glm("sub","score",df_sub,within="experiment_train",
+between="window",)
+aov_ez("sub","score",df_sub,within="experiment_train",
+between="window",)
+aov_ez(formula = "score~window*experiment_train",
+id="sub","score",data=df_sub,within="experiment_train",
+between="window")
+aov_ez(formula = score~window*experiment_train,
+id="sub","score",data=df_sub,within="experiment_train",
+between="window")
+aov_ez(formula = score~window*experiment_train+Error(sub/(experiment_train)),
+id="sub","score",data=df_sub,within="experiment_train",
+between="window")
+aov_ez()
+aov_ez
+setwd("C:\\Users\\ning\\OneDrive\\python works\\metacognition\\results")
+library('reshape2') # need for manipulate the data frame to the format that R could work
+df = read.csv('for_spss/auc as by window and model.csv')
+# say these variables are discrete
+df$sub = factor(df$participant)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+#
+for (model in levels(df$model)){
+# select the data frame
+df_sub = df[df$model == model,]
+# anova
+# N-back as within-subject variable
+# experiment as between-subject variable
+result.aov = with(df_sub,
+aov(score~window*experiment_train+Error(sub/experiment_train)))
+print(model)
+print(summary(result.aov))
+capture.cross = summary(result.aov)
+capture.output(capture.cross,
+file = sprintf("anova results/%s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+eta = EtaSq(result.aov,type = 1)
+capture.output(eta,
+file=sprintf("anova results/Eta sq %s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+}
+# all 4 - within and cross experiments
+df = read.csv('for_spss/auc as by window and model (4way).csv')
+# say these variables are discrete
+df$sub = factor(df$participant)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+#
+for (model in levels(df$model)){
+# select the data frame
+df_sub = df[df$model == model,]
+# anova
+# N-back as within-subject variable
+# experiment as between-subject variable
+result.aov = with(df_sub,
+aov(score~window*experiment_train+Error(sub/experiment_train)))
+print(model)
+print(summary(result.aov))
+capture.cross = summary(result.aov)
+capture.output(capture.cross,
+file = sprintf("anova results/%s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+eta = EtaSq(result.aov,type = 1)
+capture.output(eta,
+file=sprintf("anova results/Eta sq %s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+}
+df$experiment_test + df$experiment_train
+require(tidyr)
+df = data %>% unite(experiment,experiment_train,experiment_test)
+df = data %>% unite(experiment,experiment_train,experiment_test,sep = '_')
+df = data %>% unite_(experiment,experiment_train,experiment_test,sep = '_')
+df = df %>% unite_(experiment,experiment_train,experiment_test,sep = '_')
+df = df %>% unite_("experiment",experiment_train,experiment_test,sep = '_')
+df = df %>% unite("experiment",experiment_train,experiment_test,sep = '_')
+head(df)
+df = read.csv('for_spss/auc as by window and model (4way).csv')
+# say these variables are discrete
+df$sub = factor(df$participant)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+df$experiment = paste(df$experiment_train,df$experiment_test)
+head(df)
+df$experiment = paste(df$experiment_train,df$experiment_test,sep="_")
+head(df)
+df$experiment = factor(df$experiment)
+setwd("C:\\Users\\ning\\OneDrive\\python works\\metacognition\\results")
+library('reshape2') # need for manipulate the data frame to the format that R could work
+df = read.csv('for_spss/auc as by window and model.csv')
+# say these variables are discrete
+df$sub = factor(df$participant)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+#
+for (model in levels(df$model)){
+# select the data frame
+df_sub = df[df$model == model,]
+# anova
+# N-back as within-subject variable
+# experiment as between-subject variable
+result.aov = with(df_sub,
+aov(score~window*experiment_train+Error(sub/experiment_train)))
+print(model)
+print(summary(result.aov))
+capture.cross = summary(result.aov)
+capture.output(capture.cross,
+file = sprintf("anova results/%s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+eta = EtaSq(result.aov,type = 1)
+capture.output(eta,
+file=sprintf("anova results/Eta sq %s_%s_%s_%s.txt",
+'cross','3',model,'sklearn'))
+}
+require(tidyr)
+# all 4 - within and cross experiments
+df = read.csv('for_spss/auc as by window and model (4way).csv')
+# say these variables are discrete
+df$sub = factor(df$participant)
+df$window = factor(df$window)
+df$model = factor(df$model)
+df$experiment_test = factor(df$experiment_test)
+df$experiment_train = factor(df$experiment_train)
+df$experiment = paste(df$experiment_train,df$experiment_test,sep="_")
+df$experiment = factor(df$experiment)
+#
+for (model in levels(df$model)){
+# select the data frame
+df_sub = df[df$model == model,]
+# anova
+# N-back as within-subject variable
+# experiment as between-subject variable
+result.aov = with(df_sub,
+aov(score~window*experiment+Error(sub/experiment)))
+print(model)
+print(summary(result.aov))
+capture.cross = summary(result.aov)
+capture.output(capture.cross,
+file = sprintf("anova results/%s_%s_%s_%s.txt",
+'cross all','3',model,'sklearn'))
+eta = EtaSq(result.aov,type = 1)
+capture.output(eta,
+file=sprintf("anova results/Eta sq %s_%s_%s_%s.txt",
+'cross all','3',model,'sklearn'))
+}
+factor(df$experiment)
+result.aov
+summary(result.aov)

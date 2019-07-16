@@ -1,0 +1,16 @@
+sub cm ,model LogisticRegression    ,window 1,score=0.427
+sub cm ,model RandomForestClassifier,window 1,score=0.439
+sub cm ,model LogisticRegression    ,window 1,score=0.434
+sub cm ,model RandomForestClassifier,window 1,score=0.439
+sub cm ,model LogisticRegression    ,window 2,score=0.447
+sub cm ,model RandomForestClassifier,window 2,score=0.448
+sub cm ,model LogisticRegression    ,window 2,score=0.447
+sub cm ,model RandomForestClassifier,window 2,score=0.448
+sub cm ,model LogisticRegression    ,window 3,score=0.446
+sub cm ,model RandomForestClassifier,window 3,score=0.447
+sub cm ,model LogisticRegression    ,window 3,score=0.437
+sub cm ,model RandomForestClassifier,window 3,score=0.447
+sub cm ,model LogisticRegression    ,window 4,score=0.448
+sub cm ,model RandomForestClassifier,window 4,score=0.446
+sub cm ,model LogisticRegression    ,window 4,score=0.441
+sub cm ,model RandomForestClassifier,window 4,score=0.446

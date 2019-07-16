@@ -1,0 +1,5 @@
+sub,model,score,window,chance,feature
+FW,LogisticRegression,0.5543627906976742,1,False,correct
+FW,LogisticRegression,0.4792696267696268,2,False,correct
+FW,LogisticRegression,0.534298780487805,3,False,correct
+FW,LogisticRegression,0.4735334507042254,4,False,correct

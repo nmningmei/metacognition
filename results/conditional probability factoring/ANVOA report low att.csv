@@ -1,0 +1,8 @@
+,Num DF,Den DF,F Value,Pr > F
+awareness,1.0,15.0,,
+confidence,1.0,15.0,,
+correctness,1.0,15.0,,
+awareness:confidence,1.0,15.0,,
+awareness:correctness,1.0,15.0,,
+confidence:correctness,1.0,15.0,,
+awareness:confidence:correctness,1.0,15.0,,

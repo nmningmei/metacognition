@@ -1,0 +1,5 @@
+                            eta.sq eta.sq.part eta.sq.gen
+experiment_train        0.01625759  0.04776156 0.02198851
+experiment_train        0.01288661  0.28036463 0.01750906
+window                  0.23401442  0.39007985 0.24449742
+window:experiment_train 0.01373149  0.03617059 0.01863561

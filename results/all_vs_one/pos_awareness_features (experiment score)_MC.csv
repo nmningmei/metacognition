@@ -1,0 +1,5 @@
+sub,model,score,window,chance,feature
+MC,LogisticRegression,0.5440186046511627,1,False,awareness
+MC,LogisticRegression,0.5528378378378379,2,False,awareness
+MC,LogisticRegression,0.5456182249322494,3,False,awareness
+MC,LogisticRegression,0.5547299651567943,4,False,awareness

@@ -1,0 +1,4 @@
+sub,correlation,pvals,feature_name_1,feature_name_2
+RP,0.0949346083211659,0.02002819720286148,correct,awareness
+RP,0.1028114315544071,0.011742684010319847,correct,confidence
+RP,0.22417164677248608,2.8501320125971042e-08,awareness,confidence

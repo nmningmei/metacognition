@@ -1,0 +1,5 @@
+sub,model,score,window,chance,feature
+MP2,LogisticRegression,0.8402235772357725,1,False,all
+MP2,LogisticRegression,0.7316527777777779,2,False,all
+MP2,LogisticRegression,0.6899350649350651,3,False,all
+MP2,LogisticRegression,0.6502592592592592,4,False,all
