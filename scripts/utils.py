@@ -33,21 +33,26 @@ except:
 #import theano.tensor as t
 
 
-def resample_ttest(x,baseline = 0.5,n_ps = 100,n_permutation = 5000,one_tail = False):
+def resample_ttest(x,baseline = 0.5,n_ps = 100,n_permutation = 10000,one_tail = False):
     """
     http://www.stat.ucla.edu/~rgould/110as02/bshypothesis.pdf
+    Inputs:
+    ----------
+    x: numpy array vector, the data that is to be compared
+    baseline: the single point that we compare the data with
+    n_ps: number of p values we want to estimate
+    n_permutation: number of permutation we want to perform, the more the further it could detect the strong effects, but it is so unnecessary
+    one_tail: whether to perform one-tailed comparison
     """
     import numpy as np
-    experiment = np.mean(x) # the mean of the observations in the experiment
+    experiment      = np.mean(x) # the mean of the observations in the experiment
     experiment_diff = x - np.mean(x) + baseline # shift the mean to the baseline but keep the distribution
     # newexperiment = np.mean(experiment_diff) # just look at the new mean and make sure it is at the baseline
     # simulate/bootstrap null hypothesis distribution
-    # 1st-D := number of sample same as the experiment
-    # 2nd-D := within one permutation resamping, we perform resampling same as the experimental samples,
+    # 1st-D := within one permutation resamping, we perform resampling same as the experimental samples,
     # but also repeat this one sampling n_permutation times
-    # 3rd-D := repeat 2nd-D n_ps times to obtain a distribution of p values later
-    temp = np.random.choice(experiment_diff,size=(x.shape[0],n_permutation,n_ps),replace=True)
-    temp = temp.mean(0)# take the mean over the sames because we only care about the mean of the null distribution
+    # 2nd-D := repeat 2nd-D n_ps times to obtain a distribution of p values later
+    temp            = np.random.choice(experiment_diff,size=(n_permutation,n_ps),replace=True)
     # along each row of the matrix (n_row = n_permutation), we count instances that are greater than the observed mean of the experiment
     # compute the proportion, and we get our p values
     
