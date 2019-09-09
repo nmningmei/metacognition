@@ -52,7 +52,10 @@ def resample_ttest(x,baseline = 0.5,n_ps = 100,n_permutation = 10000,one_tail = 
     # 1st-D := within one permutation resamping, we perform resampling same as the experimental samples,
     # but also repeat this one sampling n_permutation times
     # 2nd-D := repeat 2nd-D n_ps times to obtain a distribution of p values later
-    temp            = np.random.choice(experiment_diff,size=(n_permutation,n_ps),replace=True)
+    temp            = np.random.choice(experiment_diff,size=(x.shape[0],
+                                                             n_permutation,
+                                                             n_ps),
+                                       replace=True).mean(0)
     # along each row of the matrix (n_row = n_permutation), we count instances that are greater than the observed mean of the experiment
     # compute the proportion, and we get our p values
     

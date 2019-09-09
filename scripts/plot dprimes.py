@@ -125,11 +125,19 @@ for experiment in pd.unique(df_plot['Experiment']):
                 xy = ((0+1)/2-0.005,y_start+0.001))
     
     if experiment == 'Attention decision':
-        ax_metad.hlines(y_start,-0.2,0.8)
+        # aware
+        ax_metad.hlines(y_start,-0.2,0.2)
         ax_metad.vlines(-0.2,y_start-0.5,y_start)
-        ax_metad.vlines(0.80,y_start-0.5,y_start)
-        ax_metad.annotate(results_sub[results_sub['dprime_type'] == "Meta-d'"]['stars'].values[0],
-                    xy = ((-0.25+0.75)/2-0.005,y_start+0.1))
+        ax_metad.vlines(0.20,y_start-0.5,y_start)
+        ax_metad.annotate('**',xy = ((-0.25+0.25)/2-0.005,y_start+0.1))
+        # unaware
+        ax_metad.hlines(y_start,0.8,1.2)
+        ax_metad.vlines(0.8,y_start-0.5,y_start)
+        ax_metad.vlines(1.20,y_start-0.5,y_start)
+        ax_metad.annotate('n.s.',xy = ((0.75+1.15)/2-0.005,y_start+0.1))
+        ax_metad.annotate('***',xy = (0.75,1.7))
+        ax_metad.annotate('**',xy = (1.15,1.7))
+        
     else:
         ax_metad.hlines(y_start,0,1)
         ax_metad.vlines(0,y_start-0.5,y_start)
