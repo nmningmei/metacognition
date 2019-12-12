@@ -129,7 +129,7 @@ for experiment in pd.unique(df_plot['Experiment']):
         ax_metad.hlines(y_start,-0.2,0.2)
         ax_metad.vlines(-0.2,y_start-0.5,y_start)
         ax_metad.vlines(0.20,y_start-0.5,y_start)
-        ax_metad.annotate('**',xy = ((-0.25+0.25)/2-0.005,y_start+0.1))
+        ax_metad.annotate('*',xy = ((-0.25+0.25)/2-0.005,y_start+0.1))
         # unaware
         ax_metad.hlines(y_start,0.8,1.2)
         ax_metad.vlines(0.8,y_start-0.5,y_start)
@@ -188,11 +188,15 @@ for ii,(((experiment,dtype),df_sub),ax) in enumerate(zip(df_plot.groupby(['Exper
         ax.set(xlabel='Awareness',ylabel='Sensitivity',
                title = f'{experiment} | {dtype}')
         ax.get_legend().set_title('')
-        ax.hlines(y_start,0,1)
-        ax.vlines(0,y_start-0.5,y_start)
-        ax.vlines(1,y_start-0.5,y_start)
-        ax.annotate(df_stat['stars'].values[0],
-                    xy = ((0+1)/2-0.005,y_start+0.001))
+        ax.hlines(y_start,-0.2,0.2)
+        ax.vlines(-0.2,y_start-0.5,y_start)
+        ax.vlines(0.20,y_start-0.5,y_start)
+        ax.annotate('*',xy = ((-0.25+0.25)/2-0.005,y_start+0.1))
+        # unaware
+        ax.hlines(y_start,0.8,1.2)
+        ax.vlines(0.8,y_start-0.5,y_start)
+        ax.vlines(1.20,y_start-0.5,y_start)
+        ax.annotate('n.s.',xy = ((0.75+1.15)/2-0.005,y_start+0.1))
     elif ii == 3:
         ax.set(xlabel='Awareness',ylabel='',
                title = f'{experiment} | {dtype}')
