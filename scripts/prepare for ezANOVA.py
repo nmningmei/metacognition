@@ -37,3 +37,10 @@ def process(df):
 pos = process(pos.copy())
 att = process(att.copy())
 
+pos.to_csv(os.path.join(working_dir,
+                        'for_ezANOVA_pos.csv'),
+           index = False)
+att.to_csv(os.path.join(working_dir,
+                        'for_ezANOVA_att.csv'),
+           index = False)
+
