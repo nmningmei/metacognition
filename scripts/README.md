@@ -27,7 +27,7 @@
 
 # Result - 1.1 - Exp 1.logistic regression
 ## POS, correct, awareness and confidence as features, decoding scores of logistic regression
-![pos-3-lr](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/Figure%202.png)
+![pos-3-lr](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/Figure%202.jpeg)
 Decoding Probability of Success with awareness, correctness, and confidence as features as a function of N-back trials, and factored by the classifiers. 
 The logistic regression decode the POS above chance at the group level (see p values below). Black dotted line is the theoretical chance level, 0.5. 
 Error bars represent bootstrapped 95% confidence intervals\*, resampled from the distribution of decoding scores of individual participants by each classifier with 10000 iterations.
@@ -47,7 +47,7 @@ DiCiccio and Efron, 1996. Bootstrap confidence intervals, Statistical Science, 1
 
 
 ### odd ratios estimated by scitkit-learn logistic regression
-![pos-lr-fw](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/Figure%203.png)
+![pos-lr-fw](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/Figure%203.jpeg)
 
 
 There is a significant main effect of window, F(3.0,42.0) = 17.4610,p = 0.00000016
@@ -56,9 +56,9 @@ There is a significant main effect of attributes, F(2.0,28.0) = 7.5553,p = 0.002
 
 A post hoc comparison reveal that:
 
-confidence is significantly different from correct, p = 0.00030897
+confidence is significantly different from correct, p = 0.00030297
 
-awareness is significantly different from correct, p = 0.00121188
+awareness is significantly different from correct, p = 0.00112489
 
 awareness is not different from confidence, p = 1.00000000
 
@@ -68,18 +68,18 @@ A post hoc multiple comparision reveal that:
 
 confidence at 1-back is significantly different from correct at 1-back, p = 0.00119988
 
-confidence at 2-back is significantly different from correct at 2-back, p = 0.00190781
+confidence at 2-back is significantly different from correct at 2-back, p = 0.00193181
 
-awareness at 1-back is significantly different from correct at 1-back, p = 0.02769323
+awareness at 1-back is significantly different from correct at 1-back, p = 0.02756124
 
-awareness at 2-back is significantly different from correct at 2-back, p = 0.03891211
+awareness at 2-back is significantly different from correct at 2-back, p = 0.03976402
 
-The reset are not statitically significant, p > 0.0830
+The reset are not statitically significant, p > 0.0827
 
 
 # Result - 1.2 - Exp 1.Random Forest
 ## POS, correct, awareness and confidence as features, decoding scores of random forest
-![pos-3-rf](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/supplymentary/Supplementary%20Fig%202.png)
+![pos-3-rf](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/supplymentary/Supplementary%20Fig%202.jpeg)
 Decoding Probability of Success with awareness, correctness, and confidence as features as a function of N-back trials, and factored by the classifiers. 
 The RF decode the POS above chance at the group level (see p values below). Black dotted line is the theoretical chance level, 0.5. 
 Error bars represent bootstrapped 95% confidence intervals, resampled from the distribution of decoding scores of individual participants by each classifier with 10000 iterations.
@@ -91,7 +91,7 @@ Error bars represent bootstrapped 95% confidence intervals, resampled from the d
 
 
 ### feature importance estimated by scitkit-learn random forest
-![pos-rf-fw](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/supplymentary/Supplementary%20Fig%203.png)
+![pos-rf-fw](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/supplymentary/Supplementary%20Fig%203.jpeg)
 
 
 There is a significant main effect of window, F(3.0,42.0) = 28.0000,p = 0.00000000
@@ -100,9 +100,9 @@ There is a significant main effect of attributes, F(2.0,28.0) = 8.2440,p = 0.001
 
 A post hoc comparison reveal that:
 
-confidence is significantly different from correct, p = 0.00029997
+awareness is significantly different from correct, p = 0.00029997
 
-awareness is significantly different from correct, p = 0.00030297
+confidence is significantly different from correct, p = 0.00029997
 
 awareness is not different from confidence, p = 1.00000000
 
@@ -112,18 +112,18 @@ A post hoc multiple comparision reveal that:
 
 confidence at 1-back is significantly different from correct at 1-back, p = 0.00119988
 
-awareness at 2-back is significantly different from correct at 2-back, p = 0.00207579
+awareness at 2-back is significantly different from correct at 2-back, p = 0.00202780
 
-awareness at 1-back is significantly different from correct at 1-back, p = 0.00307169
+awareness at 1-back is significantly different from correct at 1-back, p = 0.00299970
 
-confidence at 2-back is significantly different from correct at 2-back, p = 0.00615538
+confidence at 2-back is significantly different from correct at 2-back, p = 0.00669533
 
-The reset are not statitically significant, p > 0.2807
+The reset are not statitically significant, p > 0.2760
 
 
 # Result - 2.1 - Exp 2.logistic regression
 ## ATT, correct, awareness and confidence as features, decoding scores of logistic regression
-![att-3-lr](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/Figure%205.png)
+![att-3-lr](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/Figure%205.jpeg)
 Decoding decision of engagement with awareness, correctness, and confidence as features as a function of N-back trials, and factored by the classifiers. 
 The logistic regression decode the POS above chance at the group level (see p values below). Black dotted line is the theoretical chance level, 0.5. 
 Error bars represent bootstrapped 95% confidence intervals, resampled from the distribution of decoding scores of individual participants by each classifier with 10000 iterations.
@@ -135,7 +135,7 @@ Error bars represent bootstrapped 95% confidence intervals, resampled from the d
 
 
 ### Odd ratio estimated by scitkit-learn logistic regression
-![att-rf-fw](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/Figure%206.png)
+![att-rf-fw](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/Figure%206.jpeg)
 
 
 There is a significant main effect of window, F(3.0,45.0) = 5.3268,p = 0.00315804
@@ -144,9 +144,9 @@ There is no main effect of attributes, F(2.0,30.0) = 1.9860,p = 0.15488542
 
 A post hoc comparison reveal that:
 
-confidence is not different from correct, p = 0.07194481
+confidence is not different from correct, p = 0.07140186
 
-confidence is not different from awareness, p = 0.15051295
+confidence is not different from awareness, p = 0.15187181
 
 awareness is not different from correct, p = 1.00000000
 
@@ -154,14 +154,14 @@ There is a no interaction between window and attributes, F(6.0,90.0) = 1.5951, p
 
 A post hoc multiple comparision reveal that:
 
-confidence at 1-back is significantly different from correct at 1-back, p = 0.03576842
+confidence at 1-back is significantly different from correct at 1-back, p = 0.03555244
 
 The reset are not statitically significant, p > 1.0000
 
 
 # Result - 2.2 - Exp 1.Random Forest
 ## ATT, correct, awareness and confidence as features, decoding scores of random forest
-![att-3-rf](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/supplymentary/Supplementary%20Fig%205.png)
+![att-3-rf](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/supplymentary/Supplementary%20Fig%205.jpeg)
 Decoding Decision of Engagement with awareness, correctness, and confidence as features as a function of N-back trials, and factored by the classifiers. 
 The RF decode the POS above chance at the group level (see p values below). Black dotted line is the theoretical chance level, 0.5. 
 Error bars represent bootstrapped 95% confidence intervals, resampled from the distribution of decoding scores of individual participants by each classifier with 10000 iterations.
@@ -173,7 +173,7 @@ Error bars represent bootstrapped 95% confidence intervals, resampled from the d
 
 
 ### feature importance estimated by scitkit-learn random forest
-![att-rf-fw](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/supplymentary/Supplementary%20Fig%203.png)
+![att-rf-fw](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/supplymentary/Supplementary%20Fig%203.jpeg)
 
 
 There is no main effect of window, F(3.0,45.0) = -240.0000,p = 1.00000000
@@ -182,21 +182,21 @@ There is a significant main effect of attributes, F(2.0,30.0) = 5.3776,p = 0.010
 
 A post hoc comparison reveal that:
 
-awareness is significantly different from correct, p = 0.00194081
+awareness is significantly different from correct, p = 0.00190481
 
-confidence is significantly different from correct, p = 0.00318268
+confidence is significantly different from correct, p = 0.00327567
 
-awareness is not different from confidence, p = 0.73148285
+awareness is not different from confidence, p = 0.72879512
 
 There is a a significant interaction between window and attributes, F(6.0,90.0) = 3.6673, p = 0.00264570
 
 A post hoc multiple comparision reveal that:
 
-awareness at 1-back is significantly different from correct at 1-back, p = 0.00319168
+awareness at 1-back is significantly different from correct at 1-back, p = 0.00333567
 
-confidence at 1-back is significantly different from correct at 1-back, p = 0.00470353
+confidence at 1-back is significantly different from correct at 1-back, p = 0.00458354
 
-The reset are not statitically significant, p > 0.0735
+The reset are not statitically significant, p > 0.0725
 
 
 # Cross Experiment Validation
@@ -204,7 +204,7 @@ The reset are not statitically significant, p > 0.0735
 
 
 
-![ex12-lr](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/Figure%208.png)
+![ex12-lr](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/Figure%208.jpeg)
 
 
 
@@ -212,16 +212,16 @@ The reset are not statitically significant, p > 0.0735
 1-back = 0.0108, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
 
 ### p values of ATT --> POS by LogisticRegression
-1-back = 0.0004, 2-back = 0.0630, 3-back = 0.0731, 4-back = 1.0000
+1-back = 0.0004, 2-back = 0.0640, 3-back = 0.0728, 4-back = 1.0000
 
 
 
-![ex12-rf](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/supplymentary/Supplementary%20Fig%208.png)
+![ex12-rf](https://github.com/nmningmei/metacognition/blob/master/figures/final_figures/supplymentary/Supplementary%20Fig%208.jpeg)
 
 
 
 ### p values of POS --> ATT by RandomForestClassifier
-1-back = 0.0104, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
+1-back = 0.0099, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
 
 ### p values of ATT --> POS by RandomForestClassifier
-1-back = 0.0005, 2-back = 0.0584, 3-back = 0.0366, 4-back = 1.0000
+1-back = 0.0004, 2-back = 0.0569, 3-back = 0.0370, 4-back = 1.0000
