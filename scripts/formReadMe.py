@@ -614,7 +614,8 @@ coefficient of {row['Attributes']} at time {row['time']} = {row['Estimate']:.5f}
     for ii,row in df_mixed_pair_sub.iterrows():
         if row['star'] != 'n.s.':
             text_temp = f"""
-There exists a significant difference between {row['level1']} and {row['level2']}, t = {row['t']:.3f}, p = {row['p_corrected']:1.3e}"""
+There exists a significant difference between {row['level1']} and {row['level2']}, t = {row['t']:.3f}, p = {row['p_corrected']:1.3e}
+"""
             text_dict += text_temp
     with open("README.md",'a') as f:
         f.write('\n\n')

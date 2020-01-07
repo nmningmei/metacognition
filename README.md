@@ -58,7 +58,7 @@ A post hoc comparison reveal that:
 
 confidence is significantly different from correct, p = 0.00030297
 
-awareness is significantly different from correct, p = 0.00112189
+awareness is significantly different from correct, p = 0.00110089
 
 awareness is not different from confidence, p = 1.00000000
 
@@ -68,13 +68,13 @@ A post hoc multiple comparision reveal that:
 
 confidence at 1-back is significantly different from correct at 1-back, p = 0.00119988
 
-confidence at 2-back is significantly different from correct at 2-back, p = 0.00207579
+confidence at 2-back is significantly different from correct at 2-back, p = 0.00200380
 
-awareness at 1-back is significantly different from correct at 1-back, p = 0.02819718
+awareness at 1-back is significantly different from correct at 1-back, p = 0.02826917
 
-awareness at 2-back is significantly different from correct at 2-back, p = 0.03988401
+awareness at 2-back is significantly different from correct at 2-back, p = 0.03966803
 
-The reset are not statitically significant, p > 0.0811
+The reset are not statitically significant, p > 0.0824
 
 
 # Result - 1.2 - Exp 1.Random Forest
@@ -100,9 +100,9 @@ There is a significant main effect of attributes, F(2.0,28.0) = 8.2440,p = 0.001
 
 A post hoc comparison reveal that:
 
-confidence is significantly different from correct, p = 0.00029997
+awareness is significantly different from correct, p = 0.00029997
 
-awareness is significantly different from correct, p = 0.00030297
+confidence is significantly different from correct, p = 0.00029997
 
 awareness is not different from confidence, p = 1.00000000
 
@@ -112,13 +112,13 @@ A post hoc multiple comparision reveal that:
 
 confidence at 1-back is significantly different from correct at 1-back, p = 0.00119988
 
-awareness at 2-back is significantly different from correct at 2-back, p = 0.00196780
+awareness at 2-back is significantly different from correct at 2-back, p = 0.00197980
 
-awareness at 1-back is significantly different from correct at 1-back, p = 0.00303570
+awareness at 1-back is significantly different from correct at 1-back, p = 0.00295170
 
-confidence at 2-back is significantly different from correct at 2-back, p = 0.00603540
+confidence at 2-back is significantly different from correct at 2-back, p = 0.00645535
 
-The reset are not statitically significant, p > 0.2742
+The reset are not statitically significant, p > 0.2785
 
 
 # Result - 2.1 - Exp 2.logistic regression
@@ -144,9 +144,9 @@ There is no main effect of attributes, F(2.0,30.0) = 1.9860,p = 0.15488542
 
 A post hoc comparison reveal that:
 
-confidence is not different from correct, p = 0.07192381
+confidence is not different from correct, p = 0.07156084
 
-confidence is not different from awareness, p = 0.15254975
+confidence is not different from awareness, p = 0.15230377
 
 awareness is not different from correct, p = 1.00000000
 
@@ -154,7 +154,7 @@ There is a no interaction between window and attributes, F(6.0,90.0) = 1.5951, p
 
 A post hoc multiple comparision reveal that:
 
-confidence at 1-back is significantly different from correct at 1-back, p = 0.03417258
+confidence at 1-back is significantly different from correct at 1-back, p = 0.03500050
 
 The reset are not statitically significant, p > 1.0000
 
@@ -182,21 +182,21 @@ There is a significant main effect of attributes, F(2.0,30.0) = 5.3776,p = 0.010
 
 A post hoc comparison reveal that:
 
-awareness is significantly different from correct, p = 0.00193481
+awareness is significantly different from correct, p = 0.00198580
 
-confidence is significantly different from correct, p = 0.00317068
+confidence is significantly different from correct, p = 0.00325167
 
-awareness is not different from confidence, p = 0.72842016
+awareness is not different from confidence, p = 0.72955104
 
 There is a a significant interaction between window and attributes, F(6.0,90.0) = 3.6673, p = 0.00264570
 
 A post hoc multiple comparision reveal that:
 
-awareness at 1-back is significantly different from correct at 1-back, p = 0.00337166
+awareness at 1-back is significantly different from correct at 1-back, p = 0.00332367
 
-confidence at 1-back is significantly different from correct at 1-back, p = 0.00463154
+confidence at 1-back is significantly different from correct at 1-back, p = 0.00487151
 
-The reset are not statitically significant, p > 0.0727
+The reset are not statitically significant, p > 0.0739
 
 
 # Cross Experiment Validation
@@ -209,10 +209,10 @@ The reset are not statitically significant, p > 0.0727
 
 
 ### p values of POS --> ATT by LogisticRegression
-1-back = 0.0108, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
+1-back = 0.0106, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
 
 ### p values of ATT --> POS by LogisticRegression
-1-back = 0.0004, 2-back = 0.0640, 3-back = 0.0740, 4-back = 1.0000
+1-back = 0.0004, 2-back = 0.0629, 3-back = 0.0731, 4-back = 1.0000
 
 
 
@@ -221,10 +221,10 @@ The reset are not statitically significant, p > 0.0727
 
 
 ### p values of POS --> ATT by RandomForestClassifier
-1-back = 0.0101, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
+1-back = 0.0099, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
 
 ### p values of ATT --> POS by RandomForestClassifier
-1-back = 0.0004, 2-back = 0.0577, 3-back = 0.0363, 4-back = 1.0000
+1-back = 0.0005, 2-back = 0.0573, 3-back = 0.0371, 4-back = 1.0000
 
 
 
@@ -251,11 +251,17 @@ coefficient of confidence at time 4 = 0.03412, t(8266.48) = 3.25,p = 1.409e-02
 For pairwise comparison at each time:
     
 There exists a significant difference between confidence and correctness, t = 14.597, p = 7.108e-47
+
 There exists a significant difference between awareness and correctness, t = 8.948, p = 4.790e-18
+
 There exists a significant difference between confidence and awareness, t = 5.861, p = 5.626e-08
+
 There exists a significant difference between confidence and correctness, t = 5.681, p = 1.636e-07
+
 There exists a significant difference between confidence and correctness, t = 3.008, p = 3.159e-02
+
 There exists a significant difference between awareness and correctness, t = 3.003, p = 3.213e-02
+
 
 
 ### for ATT:
