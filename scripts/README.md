@@ -56,9 +56,9 @@ There is a significant main effect of attributes, F(2.0,28.0) = 7.5553,p = 0.002
 
 A post hoc comparison reveal that:
 
-confidence is significantly different from correct, p = 0.00030597
+confidence is significantly different from correct, p = 0.00030297
 
-awareness is significantly different from correct, p = 0.00114589
+awareness is significantly different from correct, p = 0.00113389
 
 awareness is not different from confidence, p = 1.00000000
 
@@ -68,13 +68,13 @@ A post hoc multiple comparision reveal that:
 
 confidence at 1-back is significantly different from correct at 1-back, p = 0.00119988
 
-confidence at 2-back is significantly different from correct at 2-back, p = 0.00201580
+confidence at 2-back is significantly different from correct at 2-back, p = 0.00212379
 
-awareness at 1-back is significantly different from correct at 1-back, p = 0.02772923
+awareness at 1-back is significantly different from correct at 1-back, p = 0.02843716
 
-awareness at 2-back is significantly different from correct at 2-back, p = 0.03932007
+awareness at 2-back is significantly different from correct at 2-back, p = 0.03869613
 
-The reset are not statitically significant, p > 0.0837
+The reset are not statitically significant, p > 0.0835
 
 
 # Result - 1.2 - Exp 1.Random Forest
@@ -100,9 +100,9 @@ There is a significant main effect of attributes, F(2.0,28.0) = 8.2440,p = 0.001
 
 A post hoc comparison reveal that:
 
-awareness is significantly different from correct, p = 0.00029997
+confidence is significantly different from correct, p = 0.00030297
 
-confidence is significantly different from correct, p = 0.00029997
+awareness is significantly different from correct, p = 0.00030597
 
 awareness is not different from confidence, p = 1.00000000
 
@@ -112,13 +112,13 @@ A post hoc multiple comparision reveal that:
 
 confidence at 1-back is significantly different from correct at 1-back, p = 0.00119988
 
-awareness at 2-back is significantly different from correct at 2-back, p = 0.00203980
+awareness at 2-back is significantly different from correct at 2-back, p = 0.00213579
 
-awareness at 1-back is significantly different from correct at 1-back, p = 0.00327567
+awareness at 1-back is significantly different from correct at 1-back, p = 0.00299970
 
-confidence at 2-back is significantly different from correct at 2-back, p = 0.00632337
+confidence at 2-back is significantly different from correct at 2-back, p = 0.00631137
 
-The reset are not statitically significant, p > 0.2755
+The reset are not statitically significant, p > 0.2756
 
 
 # Result - 2.1 - Exp 2.logistic regression
@@ -144,9 +144,9 @@ There is no main effect of attributes, F(2.0,30.0) = 1.9860,p = 0.15488542
 
 A post hoc comparison reveal that:
 
-confidence is not different from correct, p = 0.07090091
+confidence is not different from correct, p = 0.07140786
 
-confidence is not different from awareness, p = 0.15290671
+confidence is not different from awareness, p = 0.15059994
 
 awareness is not different from correct, p = 1.00000000
 
@@ -154,7 +154,7 @@ There is a no interaction between window and attributes, F(6.0,90.0) = 1.5951, p
 
 A post hoc multiple comparision reveal that:
 
-confidence at 1-back is significantly different from correct at 1-back, p = 0.03387261
+confidence at 1-back is significantly different from correct at 1-back, p = 0.03537246
 
 The reset are not statitically significant, p > 1.0000
 
@@ -182,21 +182,21 @@ There is a significant main effect of attributes, F(2.0,30.0) = 5.3776,p = 0.010
 
 A post hoc comparison reveal that:
 
-awareness is significantly different from correct, p = 0.00194981
+awareness is significantly different from correct, p = 0.00193181
 
-confidence is significantly different from correct, p = 0.00320968
+confidence is significantly different from correct, p = 0.00333867
 
-awareness is not different from confidence, p = 0.73162084
+awareness is not different from confidence, p = 0.73020198
 
 There is a a significant interaction between window and attributes, F(6.0,90.0) = 3.6673, p = 0.00264570
 
 A post hoc multiple comparision reveal that:
 
-awareness at 1-back is significantly different from correct at 1-back, p = 0.00333567
+awareness at 1-back is significantly different from correct at 1-back, p = 0.00343166
 
-confidence at 1-back is significantly different from correct at 1-back, p = 0.00533947
+confidence at 1-back is significantly different from correct at 1-back, p = 0.00499150
 
-The reset are not statitically significant, p > 0.0725
+The reset are not statitically significant, p > 0.0731
 
 
 # Cross Experiment Validation
@@ -209,10 +209,10 @@ The reset are not statitically significant, p > 0.0725
 
 
 ### p values of POS --> ATT by LogisticRegression
-1-back = 0.0110, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
+1-back = 0.0108, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
 
 ### p values of ATT --> POS by LogisticRegression
-1-back = 0.0004, 2-back = 0.0640, 3-back = 0.0731, 4-back = 1.0000
+1-back = 0.0004, 2-back = 0.0629, 3-back = 0.0727, 4-back = 1.0000
 
 
 
@@ -221,10 +221,10 @@ The reset are not statitically significant, p > 0.0725
 
 
 ### p values of POS --> ATT by RandomForestClassifier
-1-back = 0.0106, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
+1-back = 0.0100, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
 
 ### p values of ATT --> POS by RandomForestClassifier
-1-back = 0.0005, 2-back = 0.0580, 3-back = 0.0366, 4-back = 1.0000
+1-back = 0.0005, 2-back = 0.0587, 3-back = 0.0369, 4-back = 1.0000
 
 
 
