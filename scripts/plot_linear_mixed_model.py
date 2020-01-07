@@ -52,7 +52,8 @@ res = dict(experiment = [],
            level1 = [],
            level2 = [],
            diff_mean = [],
-           diff_std = [],)
+           diff_std = [],
+           dof = [],)
 for (exp,time),df_sub in df_plot.groupby(['experiment','time']):
     unique_factors = pd.unique(df_sub['Attributes'])
     pairs = combinations(unique_factors,2)
@@ -62,10 +63,10 @@ for (exp,time),df_sub in df_plot.groupby(['experiment','time']):
         b = df_sub[df_sub['Attributes'] == level2]
         t,p = stats.ttest_ind_from_stats(a['Estimate'].values[0],
                                          a['sd'].values[0],
-                                         a['dof'].values[0],
+                                         n_sub[exp],
                                          b['Estimate'].values[0],
                                          b['sd'].values[0],
-                                         b['dof'].values[0],
+                                         n_sub[exp],
                                          equal_var = False)
         res['experiment'].append(exp)
         res['time'].append(time)
@@ -73,6 +74,7 @@ for (exp,time),df_sub in df_plot.groupby(['experiment','time']):
         res['p'].append(p)
         res['level1'].append(level1)
         res['level2'].append(level2)
+        res['dof'].append(n_sub[exp])
         res['diff_mean'].append(a.Estimate.values[0] - b.Estimate.values[0])
         res['diff_std'].append(np.sqrt(a.sd.values[0]**2 + b.sd.values[0]**2))
 res = pd.DataFrame(res)
