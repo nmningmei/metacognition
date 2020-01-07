@@ -113,8 +113,9 @@ for ii,exp in enumerate(['POS','ATT']):
     
     ax.errorbar(df_sub['subtract'].values,
                 df_sub['Estimate'].values,
-                yerr = (df_sub['upr'].values - df_sub['Estimate'].values,
-                        df_sub['Estimate'].values - df_sub['lwr'].values),
+                yerr = df_sub['se'].values,
+#                yerr = (df_sub['upr'].values - df_sub['Estimate'].values,
+#                        df_sub['Estimate'].values - df_sub['lwr'].values),
                 linestyle = '',
                 color = 'black',
                 linewidth = 6,
