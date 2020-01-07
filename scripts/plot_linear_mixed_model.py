@@ -85,7 +85,8 @@ for exp,df_sub in res.groupby(['experiment']):
     temp.append(df_sub)
 res = pd.concat(temp)
 res['star'] = res['p_corrected'].apply(stars)
-
+df_plot.to_csv('../results/mixed_linear_model.csv',index=False)
+res.to_csv('../results/mixed_linear_model_pairwise.csv',index=False)
 
 y_pos = {'POS':0.55,
          'ATT': 0.17}
@@ -129,7 +130,7 @@ for ii,exp in enumerate(['POS','ATT']):
                         xy = (row['subtract'],y_pos[exp]),
                         ha='center')
     fig.savefig(os.path.join(figure_dir,
-                             f'{exp}.png'),
+                             f'{exp}.jpeg'),
     dpi = 300,
     bbox_inches = 'tight')
 
