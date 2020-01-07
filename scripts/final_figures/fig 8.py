@@ -87,7 +87,7 @@ for model_name, df_sub in df_plot.groupby(['model']):
       .despine(left=True)
       .set_titles("{row_name}"))
     [ax.axhline(0.5,linestyle='--',color='black',alpha=0.5) for ax in g.fig.axes]
-    g.savefig(os.path.join(figure_dir,'{} 8.png'.format(title_map[model_name])),
+    g.savefig(os.path.join(figure_dir,'{} 8.jpeg'.format(title_map[model_name])),
               dpi=500,bbox_inches='tight')
 
 

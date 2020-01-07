@@ -61,7 +61,7 @@ if __name__ == '__main__':
         for iii,text in enumerate(df_ttest_sub['star'].values):
             ax.annotate(text,xy=(iii-0.075,0.75))
         g.fig.savefig(os.path.join(figure_dir,
-                                   '{} 2.png'.format(title_map[model_name])),
+                                   '{} 2.jpeg'.format(title_map[model_name])),
                   dpi                 = 500,
                   bbox_inches         = 'tight')
     
@@ -141,7 +141,7 @@ if __name__ == '__main__':
             g.set(ylim=(0.,y_start + 0.05))
         [ax.yaxis.set_major_formatter(FormatStrFormatter('%.2f')) for ax in g.fig.axes]
         g._legend.texts[0].set_text('correctness')
-        g.savefig(os.path.join(figure_dir,'{} 3.png'.format(title_map[model_name])),
+        g.savefig(os.path.join(figure_dir,'{} 3.jpeg'.format(title_map[model_name])),
                    dpi                = 500,
                    bbox_inches        = 'tight',)
     
@@ -171,7 +171,7 @@ if __name__ == '__main__':
         ax = g.axes[0][0]
         for iii,text in enumerate(df_ttest_sub['star'].values):
             ax.annotate(text,xy=(iii-0.075,0.75))
-        g.savefig(os.path.join(figure_dir,'{} 5.png'.format(title_map[model_name])),
+        g.savefig(os.path.join(figure_dir,'{} 5.jpeg'.format(title_map[model_name])),
                   dpi                 = 500,
                   bbox_inches         = 'tight')
     
@@ -250,7 +250,7 @@ if __name__ == '__main__':
             g.set(ylim=(0.,y_start + 0.05))
         [ax.yaxis.set_major_formatter(FormatStrFormatter('%.2f')) for ax in g.fig.axes]
         g._legend.texts[0].set_text('correctness')
-        g.savefig(os.path.join(figure_dir,'{} 6.png'.format(title_map[model_name])),
+        g.savefig(os.path.join(figure_dir,'{} 6.jpeg'.format(title_map[model_name])),
                   dpi                  = 500,
                   bbox_inches          = 'tight',)
     
@@ -285,7 +285,7 @@ if __name__ == '__main__':
 #                   y=1.14,
 #                   x=0.55)
 #    
-#    g.savefig(os.path.join(saving_dir,'Significance test of Proabability of Success_3_1_features (1,2,3,4).png'),
+#    g.savefig(os.path.join(saving_dir,'Significance test of Proabability of Success_3_1_features (1,2,3,4).jpeg'),
 #              dpi               = 500,
 #              bbox_inches       = 'tight')
 #    
@@ -310,7 +310,7 @@ if __name__ == '__main__':
 #                   y=1.14,
 #                   x=0.55)
 #    
-#    g.savefig(os.path.join(saving_dir,'Significance test of Attention_3_1_features (1,2,3,4).png'),
+#    g.savefig(os.path.join(saving_dir,'Significance test of Attention_3_1_features (1,2,3,4).jpeg'),
 #              dpi                = 500,
 #              bbox_inches        = 'tight')
     
