@@ -598,17 +598,25 @@ for exp in experiments:
     df_mixed_pair_sub = df_mixed_pair[df_mixed_pair['experiment'] == exp]
     text_dict = f"""
 ### for {exp}:
-![pos_mixed](https://github.com/nmningmei/metacognition/blob/master/figures/linear_mixed/{exp}.jpeg)
+![{exp.lower()}_mixed](https://github.com/nmningmei/metacognition/blob/master/figures/linear_mixed/{exp}.jpeg)
 """
+    text_dict += '''from the output of the R lmer package:
+    '''
     for ii,row in df_mixed_sub.iterrows():
         row
         if row['star'] != 'n.s.':
             text_temp = f"""
-coefficient of {row['Attributes']} at time {row['time']} = {row['Estimate']:.5f}, p = {row['ps_corrected']:1.3e}
+coefficient of {row['Attributes']} at time {row['time']} = {row['Estimate']:.5f}, t({row['dof']:.2f}) = {row['t']:.2f},p = {row['ps_corrected']:1.3e}
 """
             text_dict += text_temp
-    print(text_dict)
-    with open("READMA.md",'a') as f:
+    text_dict += """For pairwise comparison at each time:
+    """
+    for ii,row in df_mixed_pair_sub.iterrows():
+        if row['star'] != 'n.s.':
+            text_temp = f"""
+There exists a significant difference between {row['level1']} and {row['level2']}, t = {row['t']:.3f}, p = {row['p_corrected']:1.3e}"""
+            text_dict += text_temp
+    with open("README.md",'a') as f:
         f.write('\n\n')
         f.write(text_dict)
         f.close()

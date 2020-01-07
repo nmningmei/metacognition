@@ -40,6 +40,7 @@ tmp <- as.data.frame(confint(glht(fit))$confint)[2:13,]
 tmp$sign <- k$coefficients[2:13,5]
 tmp$se <-k$coefficients[2:13,2]
 tmp$dof <- k$coefficients[2:13,3]
+tmp$t <- k$coefficients[2:13,4]
 # don't forget to change the saving name here!!!!!!!!!!!!!!!!!!!
 write.csv(tmp,'../results/linear_mixed/ATT_fit.csv')
 tmp$History <- c('Aw n-1','Aw n-2','Aw n-3','Aw n-4', 'Conf n-1','Conf n-2','Conf n-3','Conf n-4', 'Acc n-1','Acc n-2','Acc n-3','Acc n-4')
