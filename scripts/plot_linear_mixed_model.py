@@ -100,7 +100,7 @@ for ii,exp in enumerate(['POS','ATT']):
                      hue_order = ['correctness','awareness','confidence',],
                      data = df_sub,
                      ax = ax,
-                     alpha = 0.8,)
+                     alpha = 0.9,)
     df_sub = pd.concat([df_sub[df_sub['Attributes'] == attr].sort_values(['time']) for attr in ['correctness','awareness','confidence']])
     df_sub['subtract'] = np.concatenate([np.arange(-0.27,3,),
                                          np.arange(0,4),
@@ -114,8 +114,9 @@ for ii,exp in enumerate(['POS','ATT']):
                         df_sub['Estimate'].values - df_sub['lwr'].values),
                 linestyle = '',
                 color = 'black',
+                linewidth = 6,
                 alpha = 1.,
-                capsize = 10,)
+                capsize = 2,)
     exp_title = "Exp. 1" if exp == 'POS' else "Exp. 2"
     ax.set(title = exp_title,
            xlabel = 'Trial back',
@@ -124,9 +125,9 @@ for ii,exp in enumerate(['POS','ATT']):
     ax.legend(loc = 'upper right',bbox_to_anchor=(1.,0.8))
     for kk,row in df_sub.iterrows():
         if row['star'] != 'n.s.':
-            ax.text(row['subtract'] - 0.05,
-                    y_pos[exp],
-                    row['star'])
+            ax.annotate(row['star'],
+                        xy = (row['subtract'],y_pos[exp]),
+                        ha='center')
     fig.savefig(os.path.join(figure_dir,
                              f'{exp}.png'),
     dpi = 300,
