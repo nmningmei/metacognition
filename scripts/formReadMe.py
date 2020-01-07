@@ -616,11 +616,11 @@ For pairwise comparison at each time:
     for ii,row in df_mixed_pair_sub.iterrows():
         if row['star'] != 'n.s.':
             text_temp = f"""
-There exists a significant difference between {row['level1']} and {row['level2']} at time {row['time']}, t(row['dof']) = {row['t']:.3f}, p = {row['p_corrected']:1.3e}
+There exists a significant difference between {row['level1']} and {row['level2']} at time {row['time']}, t({row['dof']:.2f}) = {row['t']:.3f}, p = {row['p_corrected']:1.3e}
 """
         else:
             text_temp = f"""
-The difference between {row['level1']} and {row['level2']} is not significant, t(row['dof']) = {row['t']:.3f}, p = {row['p_corrected']:.4f}
+The difference between {row['level1']} and {row['level2']} is not significant, t({row['dof']:.2f}) = {row['t']:.3f}, p = {row['p_corrected']:.4f}
             """
         text_dict += text_temp
     with open("README.md",'a') as f:
