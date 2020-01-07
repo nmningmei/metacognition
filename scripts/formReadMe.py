@@ -445,6 +445,8 @@ for model_name,df_sub in c.groupby(['Models']):
     text += "\n\nThe reset are not statitically significant, p > {:.4f}".format(
             row['p_corrected'])
     multicomparisonMessages[model_name] = text
+
+
 with open('README.md','a') as f:
     f.write('\n\n')
     f.write(multicomparisonMessages['LogisticRegression'])
@@ -576,9 +578,40 @@ with open("README.md",'a') as f:
     f.write('\n\n')
     f.write(text_dict['{}'.format('RandomForestClassifier')])
 
+subtitle = """
+# Linear Mixed Model
+## As requested
+"""
 
+with open("README.md",'a') as f:
+    f.write('\n\n')
+    f.write(subtitle)
+    f.close()
 
+#########   GLM ######## direct copy from my other scripts
+df_mixed = pd.read_csv('../results/mixed_linear_model.csv')
+df_mixed_pair = pd.read_csv('../results/mixed_linear_model_pairwise.csv')
 
+experiments = ["POS","ATT"]
+for exp in experiments:
+    df_mixed_sub = df_mixed[df_mixed['experiment'] == exp]
+    df_mixed_pair_sub = df_mixed_pair[df_mixed_pair['experiment'] == exp]
+    text_dict = f"""
+### for {exp}:
+![pos_mixed](https://github.com/nmningmei/metacognition/blob/master/figures/linear_mixed/{exp}.jpeg)
+"""
+    for ii,row in df_mixed_sub.iterrows():
+        row
+        if row['star'] != 'n.s.':
+            text_temp = f"""
+coefficient of {row['Attributes']} at time {row['time']} = {row['Estimate']:.5f}, p = {row['ps_corrected']:1.3e}
+"""
+            text_dict += text_temp
+    print(text_dict)
+    with open("READMA.md",'a') as f:
+        f.write('\n\n')
+        f.write(text_dict)
+        f.close()
 
 
 
