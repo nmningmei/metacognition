@@ -600,7 +600,8 @@ for exp in experiments:
 ### for {exp}:
 ![{exp.lower()}_mixed](https://github.com/nmningmei/metacognition/blob/master/figures/linear_mixed/{exp}.jpeg)
 """
-    text_dict += '''from the output of the R lmer package:
+    text_dict += '''
+from the output of the R lmer package:
     '''
     for ii,row in df_mixed_sub.iterrows():
         row
