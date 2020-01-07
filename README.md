@@ -56,9 +56,9 @@ There is a significant main effect of attributes, F(2.0,28.0) = 7.5553,p = 0.002
 
 A post hoc comparison reveal that:
 
-confidence is significantly different from correct, p = 0.00029997
+confidence is significantly different from correct, p = 0.00030297
 
-awareness is significantly different from correct, p = 0.00114889
+awareness is significantly different from correct, p = 0.00108889
 
 awareness is not different from confidence, p = 1.00000000
 
@@ -68,13 +68,13 @@ A post hoc multiple comparision reveal that:
 
 confidence at 1-back is significantly different from correct at 1-back, p = 0.00119988
 
-confidence at 2-back is significantly different from correct at 2-back, p = 0.00197980
+confidence at 2-back is significantly different from correct at 2-back, p = 0.00193181
 
-awareness at 1-back is significantly different from correct at 1-back, p = 0.02673333
+awareness at 1-back is significantly different from correct at 1-back, p = 0.02651735
 
-awareness at 2-back is significantly different from correct at 2-back, p = 0.04008799
+awareness at 2-back is significantly different from correct at 2-back, p = 0.03822818
 
-The reset are not statitically significant, p > 0.0844
+The reset are not statitically significant, p > 0.0833
 
 
 # Result - 1.2 - Exp 1.Random Forest
@@ -100,9 +100,9 @@ There is a significant main effect of attributes, F(2.0,28.0) = 8.2440,p = 0.001
 
 A post hoc comparison reveal that:
 
-awareness is significantly different from correct, p = 0.00029997
-
 confidence is significantly different from correct, p = 0.00029997
+
+awareness is significantly different from correct, p = 0.00030597
 
 awareness is not different from confidence, p = 1.00000000
 
@@ -112,13 +112,13 @@ A post hoc multiple comparision reveal that:
 
 confidence at 1-back is significantly different from correct at 1-back, p = 0.00119988
 
-awareness at 2-back is significantly different from correct at 2-back, p = 0.00190781
+awareness at 2-back is significantly different from correct at 2-back, p = 0.00197980
 
-awareness at 1-back is significantly different from correct at 1-back, p = 0.00286771
+awareness at 1-back is significantly different from correct at 1-back, p = 0.00302370
 
-confidence at 2-back is significantly different from correct at 2-back, p = 0.00632337
+confidence at 2-back is significantly different from correct at 2-back, p = 0.00611939
 
-The reset are not statitically significant, p > 0.2751
+The reset are not statitically significant, p > 0.2756
 
 
 # Result - 2.1 - Exp 2.logistic regression
@@ -144,9 +144,9 @@ There is no main effect of attributes, F(2.0,30.0) = 1.9860,p = 0.15488542
 
 A post hoc comparison reveal that:
 
-confidence is not different from correct, p = 0.07179182
+confidence is not different from correct, p = 0.07071493
 
-confidence is not different from awareness, p = 0.15161084
+confidence is not different from awareness, p = 0.15252575
 
 awareness is not different from correct, p = 1.00000000
 
@@ -154,7 +154,7 @@ There is a no interaction between window and attributes, F(6.0,90.0) = 1.5951, p
 
 A post hoc multiple comparision reveal that:
 
-confidence at 1-back is significantly different from correct at 1-back, p = 0.03581642
+confidence at 1-back is significantly different from correct at 1-back, p = 0.03474853
 
 The reset are not statitically significant, p > 1.0000
 
@@ -182,21 +182,21 @@ There is a significant main effect of attributes, F(2.0,30.0) = 5.3776,p = 0.010
 
 A post hoc comparison reveal that:
 
-awareness is significantly different from correct, p = 0.00191981
+awareness is significantly different from correct, p = 0.00194081
 
-confidence is significantly different from correct, p = 0.00315268
+confidence is significantly different from correct, p = 0.00338066
 
-awareness is not different from confidence, p = 0.72870513
+awareness is not different from confidence, p = 0.72731627
 
 There is a a significant interaction between window and attributes, F(6.0,90.0) = 3.6673, p = 0.00264570
 
 A post hoc multiple comparision reveal that:
 
-awareness at 1-back is significantly different from correct at 1-back, p = 0.00347965
+awareness at 1-back is significantly different from correct at 1-back, p = 0.00327567
 
-confidence at 1-back is significantly different from correct at 1-back, p = 0.00470353
+confidence at 1-back is significantly different from correct at 1-back, p = 0.00488351
 
-The reset are not statitically significant, p > 0.0720
+The reset are not statitically significant, p > 0.0724
 
 
 # Cross Experiment Validation
@@ -212,7 +212,7 @@ The reset are not statitically significant, p > 0.0720
 1-back = 0.0108, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
 
 ### p values of ATT --> POS by LogisticRegression
-1-back = 0.0004, 2-back = 0.0643, 3-back = 0.0730, 4-back = 1.0000
+1-back = 0.0004, 2-back = 0.0634, 3-back = 0.0733, 4-back = 1.0000
 
 
 
@@ -221,10 +221,10 @@ The reset are not statitically significant, p > 0.0720
 
 
 ### p values of POS --> ATT by RandomForestClassifier
-1-back = 0.0104, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
+1-back = 0.0100, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
 
 ### p values of ATT --> POS by RandomForestClassifier
-1-back = 0.0005, 2-back = 0.0585, 3-back = 0.0368, 4-back = 1.0000
+1-back = 0.0005, 2-back = 0.0584, 3-back = 0.0366, 4-back = 1.0000
 
 
 
@@ -252,30 +252,30 @@ coefficient of confidence at time 4 = 0.03412, t(8266.48) = 3.25,p = 1.409e-02
 
 For pairwise comparison at each time:
     
-There exists a significant difference between confidence and correctness at time 1, t(row['dof']) = 0.622, p = 1.000e+00
+There exists a significant difference between confidence and correctness at time 1, t(row['dof']) = 14.597, p = 7.108e-47
 
-There exists a significant difference between awareness and correctness at time 1, t(row['dof']) = 0.381, p = 1.000e+00
+There exists a significant difference between awareness and correctness at time 1, t(row['dof']) = 8.948, p = 4.790e-18
 
-There exists a significant difference between confidence and awareness at time 1, t(row['dof']) = 0.250, p = 1.000e+00
+There exists a significant difference between confidence and awareness at time 1, t(row['dof']) = 5.861, p = 5.626e-08
 
-There exists a significant difference between confidence and correctness at time 2, t(row['dof']) = 0.242, p = 1.000e+00
+There exists a significant difference between confidence and correctness at time 2, t(row['dof']) = 5.681, p = 1.636e-07
 
-There exists a significant difference between confidence and correctness at time 4, t(row['dof']) = 0.128, p = 1.000e+00
+There exists a significant difference between confidence and correctness at time 4, t(row['dof']) = 3.008, p = 3.159e-02
 
-There exists a significant difference between awareness and correctness at time 2, t(row['dof']) = 0.128, p = 1.000e+00
+There exists a significant difference between awareness and correctness at time 2, t(row['dof']) = 3.003, p = 3.213e-02
 
-There exists a significant difference between confidence and awareness at time 2, t(row['dof']) = 0.119, p = 1.000e+00
-
-There exists a significant difference between confidence and correctness at time 3, t(row['dof']) = 0.106, p = 1.000e+00
-
-There exists a significant difference between awareness and correctness at time 4, t(row['dof']) = 0.077, p = 1.000e+00
-
-There exists a significant difference between confidence and awareness at time 3, t(row['dof']) = 0.061, p = 1.000e+00
-
-There exists a significant difference between confidence and awareness at time 4, t(row['dof']) = 0.053, p = 1.000e+00
-
-There exists a significant difference between awareness and correctness at time 3, t(row['dof']) = 0.048, p = 1.000e+00
-
+The difference between confidence and awareness is not significant, t(row['dof']) = 2.789, p = 0.0636
+            
+The difference between confidence and correctness is not significant, t(row['dof']) = 2.482, p = 0.1570
+            
+The difference between awareness and correctness is not significant, t(row['dof']) = 1.816, p = 0.8327
+            
+The difference between confidence and awareness is not significant, t(row['dof']) = 1.425, p = 1.0000
+            
+The difference between confidence and awareness is not significant, t(row['dof']) = 1.239, p = 1.0000
+            
+The difference between awareness and correctness is not significant, t(row['dof']) = 1.121, p = 1.0000
+            
 
 
 ### for ATT:
@@ -287,26 +287,27 @@ coefficient of confidence at time 1 = 0.06531, t(8192.99) = 5.67,p = 1.781e-07
 
 For pairwise comparison at each time:
     
-There exists a significant difference between confidence and awareness at time 1, t(row['dof']) = 0.150, p = 1.000e+00
+There exists a significant difference between confidence and awareness at time 1, t(row['dof']) = 3.420, p = 7.540e-03
 
-There exists a significant difference between confidence and correctness at time 1, t(row['dof']) = 0.095, p = 1.000e+00
-
-There exists a significant difference between awareness and confidence at time 4, t(row['dof']) = -0.048, p = 1.000e+00
-
-There exists a significant difference between correctness and awareness at time 1, t(row['dof']) = 0.045, p = 1.000e+00
-
-There exists a significant difference between awareness and correctness at time 4, t(row['dof']) = -0.042, p = 1.000e+00
-
-There exists a significant difference between confidence and correctness at time 3, t(row['dof']) = 0.029, p = 1.000e+00
-
-There exists a significant difference between confidence and awareness at time 3, t(row['dof']) = 0.027, p = 1.000e+00
-
-There exists a significant difference between correctness and awareness at time 2, t(row['dof']) = 0.018, p = 1.000e+00
-
-There exists a significant difference between correctness and confidence at time 2, t(row['dof']) = 0.011, p = 1.000e+00
-
-There exists a significant difference between confidence and awareness at time 2, t(row['dof']) = 0.008, p = 1.000e+00
-
-There exists a significant difference between correctness and awareness at time 3, t(row['dof']) = -0.003, p = 1.000e+00
-
-There exists a significant difference between correctness and confidence at time 4, t(row['dof']) = -0.002, p = 1.000e+00
+The difference between confidence and correctness is not significant, t(row['dof']) = 2.186, p = 0.3459
+            
+The difference between awareness and confidence is not significant, t(row['dof']) = -1.086, p = 1.0000
+            
+The difference between correctness and awareness is not significant, t(row['dof']) = 1.033, p = 1.0000
+            
+The difference between awareness and correctness is not significant, t(row['dof']) = -0.969, p = 1.0000
+            
+The difference between confidence and correctness is not significant, t(row['dof']) = 0.663, p = 1.0000
+            
+The difference between confidence and awareness is not significant, t(row['dof']) = 0.615, p = 1.0000
+            
+The difference between correctness and awareness is not significant, t(row['dof']) = 0.427, p = 1.0000
+            
+The difference between correctness and confidence is not significant, t(row['dof']) = 0.263, p = 1.0000
+            
+The difference between confidence and awareness is not significant, t(row['dof']) = 0.183, p = 1.0000
+            
+The difference between correctness and awareness is not significant, t(row['dof']) = -0.079, p = 1.0000
+            
+The difference between correctness and confidence is not significant, t(row['dof']) = -0.039, p = 1.0000
+            

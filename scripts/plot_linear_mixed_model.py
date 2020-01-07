@@ -63,10 +63,10 @@ for (exp,time),df_sub in df_plot.groupby(['experiment','time']):
         b = df_sub[df_sub['Attributes'] == level2]
         t,p = stats.ttest_ind_from_stats(a['Estimate'].values[0],
                                          a['sd'].values[0],
-                                         n_sub[exp],
+                                         a['dof'].values[0],
                                          b['Estimate'].values[0],
                                          b['sd'].values[0],
-                                         n_sub[exp],
+                                         b['dof'].values[0],
                                          equal_var = False)
         res['experiment'].append(exp)
         res['time'].append(time)
