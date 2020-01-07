@@ -56,9 +56,9 @@ There is a significant main effect of attributes, F(2.0,28.0) = 7.5553,p = 0.002
 
 A post hoc comparison reveal that:
 
-confidence is significantly different from correct, p = 0.00029997
+confidence is significantly different from correct, p = 0.00030297
 
-awareness is significantly different from correct, p = 0.00111289
+awareness is significantly different from correct, p = 0.00113389
 
 awareness is not different from confidence, p = 1.00000000
 
@@ -68,13 +68,13 @@ A post hoc multiple comparision reveal that:
 
 confidence at 1-back is significantly different from correct at 1-back, p = 0.00119988
 
-confidence at 2-back is significantly different from correct at 2-back, p = 0.00202780
+confidence at 2-back is significantly different from correct at 2-back, p = 0.00183582
 
-awareness at 1-back is significantly different from correct at 1-back, p = 0.02735726
+awareness at 1-back is significantly different from correct at 1-back, p = 0.02716528
 
-awareness at 2-back is significantly different from correct at 2-back, p = 0.03915208
+awareness at 2-back is significantly different from correct at 2-back, p = 0.04007599
 
-The reset are not statitically significant, p > 0.0850
+The reset are not statitically significant, p > 0.0821
 
 
 # Result - 1.2 - Exp 1.Random Forest
@@ -100,9 +100,9 @@ There is a significant main effect of attributes, F(2.0,28.0) = 8.2440,p = 0.001
 
 A post hoc comparison reveal that:
 
-confidence is significantly different from correct, p = 0.00029997
+awareness is significantly different from correct, p = 0.00029997
 
-awareness is significantly different from correct, p = 0.00030297
+confidence is significantly different from correct, p = 0.00029997
 
 awareness is not different from confidence, p = 1.00000000
 
@@ -112,13 +112,13 @@ A post hoc multiple comparision reveal that:
 
 confidence at 1-back is significantly different from correct at 1-back, p = 0.00119988
 
-awareness at 2-back is significantly different from correct at 2-back, p = 0.00201580
+awareness at 2-back is significantly different from correct at 2-back, p = 0.00205179
 
-awareness at 1-back is significantly different from correct at 1-back, p = 0.00293971
+awareness at 1-back is significantly different from correct at 1-back, p = 0.00283172
 
-confidence at 2-back is significantly different from correct at 2-back, p = 0.00645535
+confidence at 2-back is significantly different from correct at 2-back, p = 0.00667133
 
-The reset are not statitically significant, p > 0.2768
+The reset are not statitically significant, p > 0.2740
 
 
 # Result - 2.1 - Exp 2.logistic regression
@@ -144,9 +144,9 @@ There is no main effect of attributes, F(2.0,30.0) = 1.9860,p = 0.15488542
 
 A post hoc comparison reveal that:
 
-confidence is not different from correct, p = 0.07105689
+confidence is not different from correct, p = 0.07062494
 
-confidence is not different from awareness, p = 0.15213579
+confidence is not different from awareness, p = 0.15241776
 
 awareness is not different from correct, p = 1.00000000
 
@@ -154,7 +154,7 @@ There is a no interaction between window and attributes, F(6.0,90.0) = 1.5951, p
 
 A post hoc multiple comparision reveal that:
 
-confidence at 1-back is significantly different from correct at 1-back, p = 0.03587641
+confidence at 1-back is significantly different from correct at 1-back, p = 0.03454455
 
 The reset are not statitically significant, p > 1.0000
 
@@ -182,21 +182,21 @@ There is a significant main effect of attributes, F(2.0,30.0) = 5.3776,p = 0.010
 
 A post hoc comparison reveal that:
 
-awareness is significantly different from correct, p = 0.00200380
+awareness is significantly different from correct, p = 0.00207879
 
-confidence is significantly different from correct, p = 0.00317068
+confidence is significantly different from correct, p = 0.00324868
 
-awareness is not different from confidence, p = 0.72884312
+awareness is not different from confidence, p = 0.72931107
 
 There is a a significant interaction between window and attributes, F(6.0,90.0) = 3.6673, p = 0.00264570
 
 A post hoc multiple comparision reveal that:
 
-awareness at 1-back is significantly different from correct at 1-back, p = 0.00316768
+awareness at 1-back is significantly different from correct at 1-back, p = 0.00355164
 
-confidence at 1-back is significantly different from correct at 1-back, p = 0.00529147
+confidence at 1-back is significantly different from correct at 1-back, p = 0.00505149
 
-The reset are not statitically significant, p > 0.0736
+The reset are not statitically significant, p > 0.0734
 
 
 # Cross Experiment Validation
@@ -209,10 +209,10 @@ The reset are not statitically significant, p > 0.0736
 
 
 ### p values of POS --> ATT by LogisticRegression
-1-back = 0.0106, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
+1-back = 0.0105, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
 
 ### p values of ATT --> POS by LogisticRegression
-1-back = 0.0004, 2-back = 0.0637, 3-back = 0.0724, 4-back = 1.0000
+1-back = 0.0004, 2-back = 0.0634, 3-back = 0.0741, 4-back = 1.0000
 
 
 
@@ -221,10 +221,10 @@ The reset are not statitically significant, p > 0.0736
 
 
 ### p values of POS --> ATT by RandomForestClassifier
-1-back = 0.0107, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
+1-back = 0.0103, 2-back = 1.0000, 3-back = 1.0000, 4-back = 1.0000
 
 ### p values of ATT --> POS by RandomForestClassifier
-1-back = 0.0005, 2-back = 0.0580, 3-back = 0.0376, 4-back = 1.0000
+1-back = 0.0005, 2-back = 0.0579, 3-back = 0.0365, 4-back = 1.0000
 
 
 
@@ -249,6 +249,7 @@ coefficient of awareness at time 2 = 0.05940, t(8264.44) = 5.46,p = 5.784e-07
 coefficient of confidence at time 3 = 0.04486, t(8265.98) = 4.27,p = 2.412e-04
 
 coefficient of confidence at time 4 = 0.03412, t(8266.48) = 3.25,p = 1.409e-02
+
 For pairwise comparison at each time:
     
 There exists a significant difference between confidence and correctness, t = 14.597, p = 7.108e-47
@@ -271,6 +272,7 @@ There exists a significant difference between awareness and correctness, t = 3.0
 from the output of the R lmer package:
     
 coefficient of confidence at time 1 = 0.06531, t(8192.99) = 5.67,p = 1.781e-07
+
 For pairwise comparison at each time:
     
 There exists a significant difference between confidence and awareness, t = 3.420, p = 7.540e-03

@@ -610,7 +610,8 @@ from the output of the R lmer package:
 coefficient of {row['Attributes']} at time {row['time']} = {row['Estimate']:.5f}, t({row['dof']:.2f}) = {row['t']:.2f},p = {row['ps_corrected']:1.3e}
 """
             text_dict += text_temp
-    text_dict += """For pairwise comparison at each time:
+    text_dict += """
+For pairwise comparison at each time:
     """
     for ii,row in df_mixed_pair_sub.iterrows():
         if row['star'] != 'n.s.':
