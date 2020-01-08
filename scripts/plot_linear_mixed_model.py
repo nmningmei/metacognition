@@ -30,6 +30,7 @@ df_plot = []
 for f in working_data:
     f = f.replace('\\','/')
     df = pd.read_csv(f)
+    df = df.iloc[1:,:]
     attr = df['Unnamed: 0'].apply(lambda x:x.split('_')[0])
     time = df['Unnamed: 0'].apply(lambda x:int(x.split('_')[1]))
     df = df.iloc[:,1:]
@@ -74,7 +75,7 @@ for (exp,time),df_sub in df_plot.groupby(['experiment','time']):
         res['p'].append(p)
         res['level1'].append(level1)
         res['level2'].append(level2)
-        res['dof'].append(n_sub[exp])
+        res['dof'].append((a['dof'].values[0] + b['dof'].values[0])/2)
         res['diff_mean'].append(a.Estimate.values[0] - b.Estimate.values[0])
         res['diff_std'].append(np.sqrt(a.sd.values[0]**2 + b.sd.values[0]**2))
 res = pd.DataFrame(res)
