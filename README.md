@@ -250,31 +250,6 @@ coefficient of confidence at time 3 = 0.04486, t(8265.98) = 4.27,p = 2.412e-04
 
 coefficient of confidence at time 4 = 0.03412, t(8266.48) = 3.25,p = 1.409e-02
 
-For pairwise comparison at each time:
-    
-There exists a significant difference between confidence and correctness at time 1, t(8265.70) = 14.597, p = 7.108e-47
-
-There exists a significant difference between awareness and correctness at time 1, t(8264.93) = 8.948, p = 4.790e-18
-
-There exists a significant difference between confidence and awareness at time 1, t(8265.55) = 5.861, p = 5.626e-08
-
-There exists a significant difference between confidence and correctness at time 2, t(8265.30) = 5.681, p = 1.636e-07
-
-There exists a significant difference between confidence and correctness at time 4, t(8265.99) = 3.008, p = 3.159e-02
-
-There exists a significant difference between awareness and correctness at time 2, t(8264.54) = 3.003, p = 3.213e-02
-
-The difference between confidence and awareness is not significant, t(8265.20) = 2.789, p = 0.0636
-            
-The difference between confidence and correctness is not significant, t(8265.54) = 2.482, p = 0.1570
-            
-The difference between awareness and correctness is not significant, t(8265.14) = 1.816, p = 0.8327
-            
-The difference between confidence and awareness is not significant, t(8265.19) = 1.425, p = 1.0000
-            
-The difference between confidence and awareness is not significant, t(8265.62) = 1.239, p = 1.0000
-            
-The difference between awareness and correctness is not significant, t(8264.75) = 1.121, p = 1.0000
             
 
 
@@ -284,30 +259,3 @@ The difference between awareness and correctness is not significant, t(8264.75) 
 from the output of the R lmer package:
     
 coefficient of confidence at time 1 = 0.06531, t(8192.99) = 5.67,p = 1.781e-07
-
-For pairwise comparison at each time:
-    
-There exists a significant difference between confidence and awareness at time 1, t(8267.15) = 3.420, p = 7.540e-03
-
-The difference between confidence and correctness is not significant, t(8416.47) = 2.186, p = 0.3459
-            
-The difference between awareness and confidence is not significant, t(8306.52) = -1.086, p = 1.0000
-            
-The difference between correctness and awareness is not significant, t(8490.64) = 1.033, p = 1.0000
-            
-The difference between awareness and correctness is not significant, t(8547.14) = -0.969, p = 1.0000
-            
-The difference between confidence and correctness is not significant, t(8445.40) = 0.663, p = 1.0000
-            
-The difference between confidence and awareness is not significant, t(8339.17) = 0.615, p = 1.0000
-            
-The difference between correctness and awareness is not significant, t(8558.73) = 0.427, p = 1.0000
-            
-The difference between correctness and confidence is not significant, t(8437.78) = 0.263, p = 1.0000
-            
-The difference between confidence and awareness is not significant, t(8338.37) = 0.183, p = 1.0000
-            
-The difference between correctness and awareness is not significant, t(8564.31) = -0.079, p = 1.0000
-            
-The difference between correctness and confidence is not significant, t(8431.71) = -0.039, p = 1.0000
-            
