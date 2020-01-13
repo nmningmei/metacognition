@@ -32,10 +32,11 @@ library(lmerTest);library(multcomp);library("ggplot2")
 # change the name of the depedent variable below: attention or success
 fit <- lmer(success ~ awareness_1 + awareness_2 + awareness_3 + awareness_4 + confidence_1 + confidence_2 + confidence_3 + confidence_4 + correct_1 + correct_2 + correct_3 + correct_4 + (1|sub_name),data=DataSelect)
 coef(summary(fit))
+glht(fit)
 vif.mer(fit) #check VIFs for the predictors
 k <-summary(fit) #model output
-#em <- emmeans(fit,c("awareness_1",'awareness_2',"awareness_3","awareness_4","confidence_1","confidence_2","confidence_3","confidence_4","correct_1","correct_2","correct_3","correct_4"))
-#contrast(em, adjust = "bonferroni")
+em <- emmeans(fit,c("awareness_1",'awareness_2',"awareness_3","awareness_4","confidence_1","confidence_2","confidence_3","confidence_4","correct_1","correct_2","correct_3","correct_4"))
+contrast(em, adjust = "bonferroni")
 # Extract the fixed effect estimates & confints, and plot these
 tmp <- as.data.frame(k$coefficients)
 tmp$sign <- k$coefficients[,5]
