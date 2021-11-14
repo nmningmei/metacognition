@@ -1,6 +1,6 @@
 # Similar history biases for distinct prospective decisions of self-performance
 
-## [Biorxiv link](https://www.biorxiv.org/content/10.1101/607069v6)
+## [Scientific Reports volume 10, Article number: 5854 (2020)](https://www.nature.com/articles/s41598-020-62719-z)
 
 ## Exp1: {Probability of Success}(POS, low vs. high) --> {gabor patch} --> response (correct vs. incorrect) --> {awareness}(unseen vs. seen) --> {confidence}(low vs. high)
 ## Exp2: {Attention of the coming trial}(ATT, low vs. high) --> {gabor patch} --> response (correct vs. incorrect) --> {awareness}(unseen vs. seen) --> {confidence}(low vs. high)
